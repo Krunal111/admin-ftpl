@@ -1044,6 +1044,9 @@ header.fixed {
     /* Offer Block CSS End */
 
     /* Rings Block CSS Start */
+    .rings__block {
+        margin-top: 20px;
+    }
     .ring_product__item {
         padding: 10px;
         position: relative;
