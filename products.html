@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amuleti | Home</title>
+    <title>Amuleti | Products</title>
 	<link rel="shortcut icon" sizes="64x64" href="./assets/images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -12,7 +12,7 @@
 	<link href="https://unpkg.com/swiper/swiper-bundle.min.css" type="text/css" rel="stylesheet" />
     <link href="./assets/css/style.css" type="text/css" rel="stylesheet" />
 </head>
-<body>
+<body class="inner__pages">
     <header class="header">
 		<div class="header__top" data-aos="fade-down">
 			<div class="container">
@@ -78,7 +78,7 @@
 						<div class="header__menu">
 							<ul class="nav list-unstyled mb-0">
 							  	<li class="nav-item">
-									<a class="nav-link" href="products.html">Rings</a>
+									<a class="nav-link active" href="#">Rings</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="#">Earrings</a>
@@ -220,136 +220,226 @@
 	</header>
 
 	<main class="main-content">
-		<!-- Hero Banner Block Start -->
-		<section class="hero__banner" data-aos="fade-up">
-			<div class="swiper hero__banner__slider">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="hero__banner__item" style="background-image: url('./assets/images/hero-banner/hero-banner-1.jpg');">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-8">
-										<div class="hero__banner__content">
-											<h1 class="mb-4">Amuleti <br /><span>The Symbol of Tradition and Style</span></h1>
-											<a href="#" class="btn">Explore Now</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="hero__banner__item" style="background-image: url('./assets/images/hero-banner/hero-banner-1.jpg');">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-8">
-										<div class="hero__banner__content">
-											<h1 class="mb-4">Amuleti <br /><span>The Symbol of Tradition</span></h1>
-											<a href="#" class="btn">Explore Now</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="hero__banner__item" style="background-image: url('./assets/images/hero-banner/hero-banner-1.jpg');">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-8">
-										<div class="hero__banner__content">
-											<h1 class="mb-4">Amuleti <br /><span>The Symbol of Tradition and Style</span></h1>
-											<a href="#" class="btn">Explore Now</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-button swiper-button-next"></div>
-      			<div class="swiper-button swiper-button-prev"></div>
-				<div class="swiper-pagination"></div>
-			</div>
-		</section>
-		<!-- Hero Banner Block End -->
+        <!-- Product Category Block Start -->
+        <section class="product__category__block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-12 left-column">
+                        <div class="category__filter__header">
+                            <h6 class="mb-0 text-white"><img class="in__svg" src="./assets/images/icons/filter.svg" alt="Filter"> Filter By</h6>
+                        </div>
+                        <div class="product__category__list accordion">
+                            <div class="product__category__item accordion-item">
+                                <h6 class="accordion-header mb-0">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#filter-category-1" aria-expanded="true" aria-controls="filter-category-1">Price</button>
+                                </h6>
+                                <div id="filter-category-1" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled mb-0">
+                                            <li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="price-1">
+                                                    <label class="form-check-label" for="price-1">€0-3,000</label>
+                                                </div>
+                                            </li>
+											<li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="price-2">
+                                                    <label class="form-check-label" for="price-2">€3,000-5,000</label>
+                                                </div>
+                                            </li>
+											<li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="price-3">
+                                                    <label class="form-check-label" for="price-3">€5,000-10,000</label>
+                                                </div>
+                                            </li>
+											<li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="price-4">
+                                                    <label class="form-check-label" for="price-4">€10,000-20,000</label>
+                                                </div>
+                                            </li>
+											<li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="price-5">
+                                                    <label class="form-check-label" for="price-5">€20,000 and Above</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__category__item accordion-item">
+                                <h6 class="accordion-header mb-0">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filter-category-2" aria-expanded="false" aria-controls="filter-category-2">Metal</button>
+                                </h6>
+                                <div id="filter-category-2" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled mb-0">
+                                            <li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="gold">
+                                                    <label class="form-check-label" for="gold">Gold</label>
+                                                </div>
+                                            </li>
+											<li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="w_gold">
+                                                    <label class="form-check-label" for="w_gold">White Gold</label>
+                                                </div>
+                                            </li>
+											<li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="r_gold">
+                                                    <label class="form-check-label" for="r_gold">Rose Gold</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="product__category__item accordion-item">
+                                <h6 class="accordion-header mb-0">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filter-category-3" aria-expanded="false" aria-controls="filter-category-3">Gold Purity</button>
+                                </h6>
+                                <div id="filter-category-3" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled mb-0">
+                                            <li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="purity">
+                                                    <label class="form-check-label" for="purity">Gold 18 KT</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="product__category__item accordion-item">
+                                <h6 class="accordion-header mb-0">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filter-category-4" aria-expanded="false" aria-controls="filter-category-4">GEMS</button>
+                                </h6>
+                                <div id="filter-category-4" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled mb-0">
+                                            <li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="diamonds">
+                                                    <label class="form-check-label" for="diamonds">Diamonds</label>
+                                                </div>
+                                            </li>
+											<li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="rubies">
+                                                    <label class="form-check-label" for="rubies">Rubies</label>
+                                                </div>
+                                            </li>
+											<li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="sapphires">
+                                                    <label class="form-check-label" for="sapphires">Sapphires</label>
+                                                </div>
+                                            </li>
+											<li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="emeralds">
+                                                    <label class="form-check-label" for="emeralds">Emeralds</label>
+                                                </div>
+                                            </li>
+											<li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="pearls">
+                                                    <label class="form-check-label" for="pearls">Pearls</label>
+                                                </div>
+                                            </li>
+											<li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="others">
+                                                    <label class="form-check-label" for="others">Others</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="product__category__item accordion-item">
+                                <h6 class="accordion-header mb-0">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filter-category-5" aria-expanded="false" aria-controls="filter-category-5">Popular</button>
+                                </h6>
+                                <div id="filter-category-5" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled mb-0">
+                                            <li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="popular">
+                                                    <label class="form-check-label" for="popular">Popular</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="product__category__item accordion-item">
+                                <h6 class="accordion-header mb-0">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filter-category-6" aria-expanded="false" aria-controls="filter-category-6">Next Day Delivery</button>
+                                </h6>
+                                <div id="filter-category-6" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled mb-0">
+                                            <li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="delivery">
+                                                    <label class="form-check-label" for="delivery">Delivery</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="product__category__item accordion-item">
+                                <h6 class="accordion-header mb-0">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filter-category-7" aria-expanded="false" aria-controls="filter-category-7">More Filters	</button>
+                                </h6>
+                                <div id="filter-category-7" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled mb-0">
+                                            <li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="filters">
+                                                    <label class="form-check-label" for="filters">Filters</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-8 col-sm-12 right-column"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Product Category Block End -->
 
-		<!-- Category Block Start -->
-		<section class="categories secondary-bg">
+        <!-- Offer Block Start -->
+		<section class="offfer__block">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<div class="main__title text-center mb-5" data-aos="fade-up">
-							<h5 class="text-white fw-light mb-2">Luxury italian group since 1963</h5>
-							<h3 class="mb-0 text-uppercase text-white">Jewelry collection</h3>
-						</div>
-					</div>
-				</div>
-				<div class="row categories__list">
-					<div class="col" data-aos="fade-up">
-						<div class="category__item">
-							<a href="#">
-								<div class="category__image center--image">
-									<img src="./assets/images/category-banner/category-banner-1.jpg" width="209" height="264" alt="Rings">
-								</div>
-								<div class="category__name">
-									<h5 class="mb-0">Rings</h5>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col" data-aos="fade-up">
-						<div class="category__item">
-							<a href="#">
-								<div class="category__image center--image">
-									<img src="./assets/images/category-banner/category-banner-2.jpg" width="209" height="264" alt="Earrings">
-								</div>
-								<div class="category__name">
-									<h5 class="mb-0">Earrings</h5>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col" data-aos="fade-up">
-						<div class="category__item">
-							<a href="#">
-								<div class="category__image center--image">
-									<img src="./assets/images/category-banner/category-banner-3.jpg" width="209" height="264" alt="Bracelets">
-								</div>
-								<div class="category__name">
-									<h5 class="mb-0">Bracelets</h5>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col" data-aos="fade-up">
-						<div class="category__item">
-							<a href="#">
-								<div class="category__image center--image">
-									<img src="./assets/images/category-banner/category-banner-4.jpg" width="209" height="264" alt="Necklaces & Pendants">
-								</div>
-								<div class="category__name">
-									<h5 class="mb-0">Necklaces & Pendants</h5>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col" data-aos="fade-up">
-						<div class="category__item">
-							<a href="#">
-								<div class="category__image center--image">
-									<img src="./assets/images/category-banner/category-banner-5.jpg" width="209" height="264" alt="Pearls">
-								</div>
-								<div class="category__name">
-									<h5 class="mb-0">Pearls</h5>
-								</div>
-							</a>
+						<div class="offfer__item position-relative" data-aos="fade-up">
+							<div class="offfer__banner center--image">
+								<img src="./assets/images/offer-banner.jpg" width="1142" height="377" alt="Offer Banner">
+							</div>
+							<div class="offfer__cta">
+								<a href="#" class="btn">Explore Now</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- Category Block End -->
+		<!-- Offer Block End -->
 
 		<!-- Popular Products Block Start -->
 		<section class="popular__products">
@@ -623,425 +713,6 @@
 			</div>
 		</section>
 		<!-- Popular Products Block End -->
-
-		<!-- Offer Block Start -->
-		<section class="offfer__block">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="offfer__item position-relative" data-aos="fade-up">
-							<div class="offfer__banner center--image">
-								<img src="./assets/images/offer-banner.jpg" width="1142" height="377" alt="Offer Banner">
-							</div>
-							<div class="offfer__cta">
-								<a href="#" class="btn">Explore Now</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Offer Block End -->
-
-		<!-- Diamond Products Block Start -->
-		<section class="popular__products">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="popular__products__box diamond__products">
-							<div class="main__title text-center mb-5" data-aos="fade-up">
-								<h5 class="fw-light mb-2">Beautiful colors & excellent quality</h5>
-								<h3 class="mb-0">Diamond Jewellery</h3>
-							</div>
-							<div class="diamond__products__slider swiper">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<div class="product__item" data-aos="fade-up">
-											<div class="product__img center--image">
-												<a href="#"><img src="./assets/images/products/product-img-6.png" width="179" height="161" alt="Product Name"></a>
-											</div>
-											<div class="product__des text-center">
-												<div class="product__whishlist added">
-													<img class="in__svg" src="./assets/images/icons/whistlist.svg" alt="Whistlist">
-												</div>
-												<h6 class="product__name">Lorem Ipsum is dummy text</h6>
-												<h6 class="product__price">Price <span class="fw-bold">€ 10.90</span></h6>
-												<ul class="product__star d-flex align-content-center justify-content-center list-unstyled mb-0">
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="product__item" data-aos="fade-up">
-											<div class="product__img center--image">
-												<a href="#"><img src="./assets/images/products/product-img-7.png" width="179" height="161" alt="Product Name"></a>
-											</div>
-											<div class="product__des text-center">
-												<div class="product__whishlist">
-													<img class="in__svg" src="./assets/images/icons/whistlist.svg" alt="Whistlist">
-												</div>
-												<h6 class="product__name">Lorem Ipsum is dummy text</h6>
-												<h6 class="product__price">Price <span class="fw-bold">€ 10.90</span></h6>
-												<ul class="product__star d-flex align-content-center justify-content-center list-unstyled mb-0">
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li>
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="product__item" data-aos="fade-up">
-											<div class="product__img center--image">
-												<a href="#"><img src="./assets/images/products/product-img-8.png" width="179" height="161" alt="Product Name"></a>
-											</div>
-											<div class="product__des text-center">
-												<div class="product__whishlist">
-													<img class="in__svg" src="./assets/images/icons/whistlist.svg" alt="Whistlist">
-												</div>
-												<h6 class="product__name">Lorem Ipsum is dummy text</h6>
-												<h6 class="product__price">Price <span class="fw-bold">€ 10.90</span></h6>
-												<ul class="product__star d-flex align-content-center justify-content-center list-unstyled mb-0">
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li>
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="product__item" data-aos="fade-up">
-											<div class="product__img center--image">
-												<a href="#"><img src="./assets/images/products/product-img-9.png" width="179" height="161" alt="Product Name"></a>
-											</div>
-											<div class="product__des text-center">
-												<div class="product__whishlist">
-													<img class="in__svg" src="./assets/images/icons/whistlist.svg" alt="Whistlist">
-												</div>
-												<h6 class="product__name">Lorem Ipsum is dummy text</h6>
-												<h6 class="product__price">Price <span class="fw-bold">€ 10.90</span></h6>
-												<ul class="product__star d-flex align-content-center justify-content-center list-unstyled mb-0">
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li>
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="product__item" data-aos="fade-up">
-											<div class="product__img center--image">
-												<a href="#"><img src="./assets/images/products/product-img-10.png" width="179" height="161" alt="Product Name"></a>
-											</div>
-											<div class="product__des text-center">
-												<div class="product__whishlist">
-													<img class="in__svg" src="./assets/images/icons/whistlist.svg" alt="Whistlist">
-												</div>
-												<h6 class="product__name">Lorem Ipsum is dummy text</h6>
-												<h6 class="product__price">Price <span class="fw-bold">€ 10.90</span></h6>
-												<ul class="product__star d-flex align-content-center justify-content-center list-unstyled mb-0">
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li>
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="view__more d-flex align-content-center justify-content-center" data-aos="fade-up">
-									<a href="#" class="btn">Explore Now</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Diamond Products Block End -->
-
-		<!-- Rings Block Start -->
-		<section class="rings__block">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="main__title text-center mb-4" data-aos="fade-up">
-							<h3 class="mb-2">New Rings For You!</h3>
-							<h5 class="fw-light mb-0">Lorem Ipsum is a dummy text</h5>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="rings__slider swiper">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<div class="ring_product__item" data-aos="fade-up">
-										<div class="ring_product__img center--image">
-											<a href="#"><img src="./assets/images/rings/ring_img-1.jpg" width="319" height="191" alt="Product Name"></a>
-										</div>
-										<div class="ring_product__des">
-											<h6 class="mb-0">Lorem Ipsum is dummy text</h6>
-											<p class="mb-0">Lorem Ipsum</p>
-											<div class="ring_product__action d-flex align-content-center justify-content-between">
-												<h5 class="ring_product__price mb-0"><span class="d-block">Price Range</span>€ 10.90</h5>
-												<div class="ring_product__link">
-													<a href="#"><img class="in__svg" src="./assets/images/icons/right-arrow.svg" alt="Arrow"></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide ringe__single__col">
-									<div class="ring_product__item ringe__single" data-aos="fade-up">
-										<div class="ring_product__img center--image">
-											<a href="#"><img src="./assets/images/rings/ring_img-2.jpg" width="379" height="379" alt="Product Name"></a>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="ring_product__item" data-aos="fade-up">
-										<div class="ring_product__img center--image">
-											<a href="#"><img src="./assets/images/rings/ring_img-3.jpg" width="319" height="191" alt="Product Name"></a>
-										</div>
-										<div class="ring_product__des">
-											<h6 class="mb-0">Lorem Ipsum is dummy text</h6>
-											<p class="mb-0">Lorem Ipsum</p>
-											<div class="ring_product__action d-flex align-content-center justify-content-between">
-												<h5 class="ring_product__price mb-0"><span class="d-block">Price Range</span>€ 10.90</h5>
-												<div class="ring_product__link">
-													<a href="#"><img class="in__svg" src="./assets/images/icons/right-arrow.svg" alt="Arrow"></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="ring_product__item" data-aos="fade-up">
-										<div class="ring_product__img center--image">
-											<a href="#"><img src="./assets/images/rings/ring_img-4.jpg" width="319" height="191" alt="Product Name"></a>
-										</div>
-										<div class="ring_product__des">
-											<h6 class="mb-0">Lorem Ipsum is dummy text</h6>
-											<p class="mb-0">Lorem Ipsum</p>
-											<div class="ring_product__action d-flex align-content-center justify-content-between">
-												<h5 class="ring_product__price mb-0"><span class="d-block">Price Range</span>€ 10.90</h5>
-												<div class="ring_product__link">
-													<a href="#"><img class="in__svg" src="./assets/images/icons/right-arrow.svg" alt="Arrow"></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="ring_product__item" data-aos="fade-up">
-										<div class="ring_product__img center--image">
-											<a href="#"><img src="./assets/images/rings/ring_img-5.jpg" width="319" height="191" alt="Product Name"></a>
-										</div>
-										<div class="ring_product__des">
-											<h6 class="mb-0">Lorem Ipsum is dummy text</h6>
-											<p class="mb-0">Lorem Ipsum</p>
-											<div class="ring_product__action d-flex align-content-center justify-content-between">
-												<h5 class="ring_product__price mb-0"><span class="d-block">Price Range</span>€ 10.90</h5>
-												<div class="ring_product__link">
-													<a href="#"><img class="in__svg" src="./assets/images/icons/right-arrow.svg" alt="Arrow"></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="ring_product__item" data-aos="fade-up">
-										<div class="ring_product__img center--image">
-											<a href="#"><img src="./assets/images/rings/ring_img-6.jpg" width="319" height="191" alt="Product Name"></a>
-										</div>
-										<div class="ring_product__des">
-											<h6 class="mb-0">Lorem Ipsum is dummy text</h6>
-											<p class="mb-0">Lorem Ipsum</p>
-											<div class="ring_product__action d-flex align-content-center justify-content-between">
-												<h5 class="ring_product__price mb-0"><span class="d-block">Price Range</span>€ 10.90</h5>
-												<div class="ring_product__link">
-													<a href="#"><img class="in__svg" src="./assets/images/icons/right-arrow.svg" alt="Arrow"></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="ring_product__item" data-aos="fade-up">
-										<div class="ring_product__img center--image">
-											<a href="#"><img src="./assets/images/rings/ring_img-1.jpg" width="319" height="191" alt="Product Name"></a>
-										</div>
-										<div class="ring_product__des">
-											<h6 class="mb-0">Lorem Ipsum is dummy text</h6>
-											<p class="mb-0">Lorem Ipsum</p>
-											<div class="ring_product__action d-flex align-content-center justify-content-between">
-												<h5 class="ring_product__price mb-0"><span class="d-block">Price Range</span>€ 10.90</h5>
-												<div class="ring_product__link">
-													<a href="#"><img class="in__svg" src="./assets/images/icons/right-arrow.svg" alt="Arrow"></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="ring_product__item" data-aos="fade-up">
-										<div class="ring_product__img center--image">
-											<a href="#"><img src="./assets/images/rings/ring_img-2.jpg" width="319" height="191" alt="Product Name"></a>
-										</div>
-										<div class="ring_product__des">
-											<h6 class="mb-0">Lorem Ipsum is dummy text</h6>
-											<p class="mb-0">Lorem Ipsum</p>
-											<div class="ring_product__action d-flex align-content-center justify-content-between">
-												<h5 class="ring_product__price mb-0"><span class="d-block">Price Range</span>€ 10.90</h5>
-												<div class="ring_product__link">
-													<a href="#"><img class="in__svg" src="./assets/images/icons/right-arrow.svg" alt="Arrow"></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="ring_product__item" data-aos="fade-up">
-										<div class="ring_product__img center--image">
-											<a href="#"><img src="./assets/images/rings/ring_img-3.jpg" width="319" height="191" alt="Product Name"></a>
-										</div>
-										<div class="ring_product__des">
-											<h6 class="mb-0">Lorem Ipsum is dummy text</h6>
-											<p class="mb-0">Lorem Ipsum</p>
-											<div class="ring_product__action d-flex align-content-center justify-content-between">
-												<h5 class="ring_product__price mb-0"><span class="d-block">Price Range</span>€ 10.90</h5>
-												<div class="ring_product__link">
-													<a href="#"><img class="in__svg" src="./assets/images/icons/right-arrow.svg" alt="Arrow"></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="ring_product__item" data-aos="fade-up">
-										<div class="ring_product__img center--image">
-											<a href="#"><img src="./assets/images/rings/ring_img-4.jpg" width="319" height="191" alt="Product Name"></a>
-										</div>
-										<div class="ring_product__des">
-											<h6 class="mb-0">Lorem Ipsum is dummy text</h6>
-											<p class="mb-0">Lorem Ipsum</p>
-											<div class="ring_product__action d-flex align-content-center justify-content-between">
-												<h5 class="ring_product__price mb-0"><span class="d-block">Price Range</span>€ 10.90</h5>
-												<div class="ring_product__link">
-													<a href="#"><img class="in__svg" src="./assets/images/icons/right-arrow.svg" alt="Arrow"></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="ring_product__item" data-aos="fade-up">
-										<div class="ring_product__img center--image">
-											<a href="#"><img src="./assets/images/rings/ring_img-5.jpg" width="319" height="191" alt="Product Name"></a>
-										</div>
-										<div class="ring_product__des">
-											<h6 class="mb-0">Lorem Ipsum is dummy text</h6>
-											<p class="mb-0">Lorem Ipsum</p>
-											<div class="ring_product__action d-flex align-content-center justify-content-between">
-												<h5 class="ring_product__price mb-0"><span class="d-block">Price Range</span>€ 10.90</h5>
-												<div class="ring_product__link">
-													<a href="#"><img class="in__svg" src="./assets/images/icons/right-arrow.svg" alt="Arrow"></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="ring_product__item" data-aos="fade-up">
-										<div class="ring_product__img center--image">
-											<a href="#"><img src="./assets/images/rings/ring_img-6.jpg" width="319" height="191" alt="Product Name"></a>
-										</div>
-										<div class="ring_product__des">
-											<h6 class="mb-0">Lorem Ipsum is dummy text</h6>
-											<p class="mb-0">Lorem Ipsum</p>
-											<div class="ring_product__action d-flex align-content-center justify-content-between">
-												<h5 class="ring_product__price mb-0"><span class="d-block">Price Range</span>€ 10.90</h5>
-												<div class="ring_product__link">
-													<a href="#"><img class="in__svg" src="./assets/images/icons/right-arrow.svg" alt="Arrow"></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-button-wrapper" data-aos="fade-up">
-								<div class="swiper-button swiper-button-prev"></div>
-								<div class="swiper-button swiper-button-next"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Rings Block End -->
 	</main>
 
 	<footer class="footer">

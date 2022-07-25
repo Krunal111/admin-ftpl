@@ -100,6 +100,12 @@ var ringsSlider = new Swiper(".rings__slider", {
 });
 // Rings Slider JS End
 
+// Search Toggle Start
+$(".header--search .header__search__icon").click(function(){
+	$(".header__search").slideToggle();
+});
+// Search Toggle End
+
 // Mobile Menu Start
 $(".mobile_menu").click(function(){
 	$(".header__menu, .mobile_menu").toggleClass("open");
