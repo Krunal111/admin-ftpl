@@ -1092,14 +1092,14 @@ header.fixed {
         bottom: 0;
     }
     .hero__banner__slider .swiper-button-next {
-        right: 0;
+        right: 1rem;
     }
     .hero__banner__slider .swiper-button-prev {
-        left: 0;
+        left: 1rem;
     }
     .hero__banner__item {
         background-position: 70% top;
-        padding: 37.3% 0 17.3%;
+        padding: 37% 0 20%;
     }
     .hero__banner__content {
         padding-left: 0;
