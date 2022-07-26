@@ -26,10 +26,18 @@ var heroSlider = new Swiper(".hero__banner__slider", {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+    },
+    breakpoints: {
+      0: {
+        autoHeight: true
+      },
+      1024: {
+        slidesPerView: 1
+      }
     }
 });
 // Hero JS End
-
+autoHeight: true
 // Popular Products JS Start
 var popularProductsSlider = new Swiper(".popular__products__slider", {
     slidesPerView: 1,
@@ -99,12 +107,6 @@ var ringsSlider = new Swiper(".rings__slider", {
     }
 });
 // Rings Slider JS End
-
-// Mobile Menu Start
-// $(".mobile_menu").click(function(){
-// 	$(".header__menu, .mobile_menu").toggleClass("open");
-// });
-// Mobile Menu End
 
 // SVG file to SVG code convert JS Start
 function img2svg() {

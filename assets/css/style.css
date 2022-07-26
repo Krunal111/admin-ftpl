@@ -1035,7 +1035,7 @@ header.fixed {
         height: auto;
     }
     .header__icon.header--cart {
-        padding-right: 15px;
+        padding-right: 10px;
     }
     .mobile__wrapper .site__languages {
         margin: 0 !important;
@@ -1054,6 +1054,9 @@ header.fixed {
     }
     .header__icon svg {
         width: auto;
+        height: 1.2rem;
+    }
+    .header__icon.header--cart svg {
         height: 1.3rem;
     }
     .cart__icon .cart__count {
@@ -1064,9 +1067,35 @@ header.fixed {
     /* Header CSS End */
 
     /* Hero Banner Block CSS Start */
-    .hero__banner__slider .swiper-button,
+    .hero__banner__slider .swiper-button:after {
+        font-size: 1rem;
+    }
     .hero__banner__slider .swiper-pagination {
-        display: none;
+        bottom: 10px;
+        width: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .hero__banner__slider .swiper-pagination .swiper-pagination-bullet {
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
+        width: 0.7rem;
+        height: 0.7rem;
+    }
+    .hero__banner__slider .swiper-pagination .swiper-pagination-bullet:before {
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+    }
+    .hero__banner__slider .swiper-button {
+        top: auto;
+        bottom: 0;
+    }
+    .hero__banner__slider .swiper-button-next {
+        right: 0;
+    }
+    .hero__banner__slider .swiper-button-prev {
+        left: 0;
     }
     .hero__banner__item {
         background-position: 70% top;
@@ -1095,6 +1124,9 @@ header.fixed {
     .category__item .category__image {
         padding-top: 37.5%;
     }
+    .category__item .category__image img {
+        object-position: center 70%;
+    }
     .category__item .category__name {
         padding: 0.938rem;
     }
@@ -1106,14 +1138,11 @@ header.fixed {
     /* Category Block CSS End */
 
     /* Popular Products Block CSS Start */
-    .swiper-button-wrapper .swiper-button {
-        display: none;
-    }
     .popular__products {
         margin-top: 3.125rem;
     }
     .popular__products__box {
-        padding: 30px 0;
+        padding: 1.25rem 0.625rem;
     }
     /* Popular Products Block CSS End */
 
@@ -1242,7 +1271,7 @@ header.fixed {
 @media (max-width: 360px) {
     /* Header CSS Start */
     .mobile__menu__main {
-        padding: 5px 0;
+        padding: 10px 0;
     }
     /* Header CSS End */
 }
