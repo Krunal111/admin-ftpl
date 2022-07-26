@@ -36,7 +36,7 @@ a {
     -o-transition: all 0.6s ease-in-out;
     transition: all 0.6s ease-in-out;
 }
-button:focus {
+:focus {
     box-shadow: none !important;
 }
 path {
@@ -265,6 +265,9 @@ header.fixed-header .header__top {
 .header__icon svg {
     width: auto;
     height: 1.563rem;
+}
+.header__icon.header--cart svg {
+    height: 1.58rem;
 }
 .header__icon svg path {
     fill: var(--primarycolor);
@@ -544,6 +547,7 @@ header.fixed {
 }
 .product__item {
     background-color: #ffffff;
+    position: relative;
     padding: 0.938rem 0.938rem 1.563rem;
     border-radius: 1.875rem;
     margin-bottom: 2.813rem;
@@ -670,7 +674,7 @@ header.fixed {
 
 /* Category Page CSS Start */
 .inner__pages .main-content {
-    margin-top: 13.125rem;
+    margin-top: 15rem;
 }
 .category__filter__header {
     background-color: var(--secondcolor);
@@ -700,12 +704,10 @@ header.fixed {
     border-radius: 0;
 }
 .product__category__item .accordion-button::after {
-    background-image: none;
-    content: "+";
-    font-size: 18px;
-    width: auto;
-    height: auto;
-    color: #05224C;
+    background-image: url('../images/icons/plus.svg');
+    background-size: contain;
+    width: 0.625rem;
+    height: 0.625rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -715,8 +717,7 @@ header.fixed {
     transition: all 0.6s ease-in-out;
 }
 .product__category__item .accordion-button:not(.collapsed)::after {
-    content: "-";
-    font-size: 24px;
+    background-image: url('../images/icons/minus.svg');
     transform: none;
     -webkit-transition: all 0.6s ease-in-out;
     -o-transition: all 0.6s ease-in-out;
@@ -735,6 +736,67 @@ header.fixed {
 }
 .form-check .form-check-label {
     font-size: 15px;
+}
+
+.products__browse {
+    margin-bottom: 2rem;
+}
+.products__browse h1 {
+    font-size: 1.875rem;
+}
+.product__sort label {
+    font-weight: 700;
+}
+.product__sort .form-select {
+    width: auto;
+    border: none;
+    color: var(--primarycolor);
+    padding: 0 2.6rem 0 1.2rem;
+}
+.sort__up_down {
+    display: inline-block;
+    margin-left: 0.3rem;
+    cursor: pointer;
+}
+
+.products__list .product__item {
+    border: 1px solid #B0BABF;
+    box-shadow: none;
+    -webkit-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+.products__list .product__item:hover {
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.06);
+    -webkit-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+.products__list .product__item .product__img {
+    padding-top: 70%;
+}
+.products__list .product__item .product__action {
+    margin-bottom: -2.688rem;
+    margin-top: 1.875rem;
+}
+.products__list .product__item .product__action .btn {
+    letter-spacing: 0.3px;
+    padding: 0.5rem 1.375rem;
+}
+
+.offfer__item.category-offer .offfer__cta {
+    left: 50px;
+    bottom: 50%;
+    transform: translate(0, 50%);
+    width: 23.125rem;
+}
+.offfer__item.category-offer .offfer__cta h2 {
+    font-size: 4.375rem;
+    letter-spacing: 0.3px;
+    margin-bottom: 1.25rem;
+}
+.offfer__item.category-offer .offfer__cta .btn {
+    padding: 1.125rem 2.563rem;
 }
 /* Category Page CSS End */
 
@@ -996,6 +1058,15 @@ header.fixed {
     }
     /* Rings Block CSS End */
 
+    /* Category Page CSS Start */
+    .offfer__item.category-offer .offfer__cta {
+        width: 14.375rem;
+    }
+    .offfer__item.category-offer .offfer__cta h2 {
+        font-size: 2.813rem;
+    }
+    /* Category Page CSS End */
+
     /* Footer CSS Start */
     .newsletter__form .form-group {
         width: 100%;
@@ -1199,6 +1270,19 @@ header.fixed {
         height: 36px;
     }
     /* Rings Block CSS End */
+
+    /* Category Page CSS Start */
+    .inner__pages .main-content {
+        margin-top: 6.75rem;
+    }
+    .offfer__item.category-offer .offfer__cta {
+        width: auto;
+    }
+    .products__list .col-sm-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    /* Category Page CSS End */
 
     /* Footer CSS Start */
     .footer {
