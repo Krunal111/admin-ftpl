@@ -101,9 +101,9 @@ var ringsSlider = new Swiper(".rings__slider", {
 // Rings Slider JS End
 
 // Mobile Menu Start
-$(".mobile_menu").click(function(){
-	$(".header__menu, .mobile_menu").toggleClass("open");
-});
+// $(".mobile_menu").click(function(){
+// 	$(".header__menu, .mobile_menu").toggleClass("open");
+// });
 // Mobile Menu End
 
 // SVG file to SVG code convert JS Start

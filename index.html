@@ -143,10 +143,10 @@
 			<div class="container">
 				<div class="mobile__wrapper d-flex align-content-center justify-content-between">
 					<div class="header__menu__col">
-						<div class="mobile_menu">
+						<div class="mobile_menu" data-bs-toggle="dropdown" aria-expanded="false" role="button">
 							<span class="mobile_menu-icon"></span>
 						</div>
-						<div class="header__menu">
+						<div class="header__menu dropdown-menu">
 							<ul class="nav list-unstyled">
 								<li class="nav-item">
 									<a class="nav-link" href="#">Rings</a>
@@ -164,43 +164,11 @@
 									<a class="nav-link" href="#">Pearls</a>
 								</li>
 							</ul>
-							<ul class="site__languages list-unstyled d-flex align-content-center mt-3 mb-0">
-								<li>
-									<a href="#">Italiano</a>
-								</li>
-								<li>
-									<a href="#">Español</a>
-								</li>
-								<li class="active">
-									<a href="#">English</a>
-								</li>
-							</ul>
 							<ul class="contact__link list-unstyled mb-0 mt-4">
 								<li>
 									<a class="d-flex align-content-center" title="Call us" href="tel:+39051273022"><img class="in__svg" src="./assets/images/icons/call.svg" alt="Call">+39 051 273022</a>
 								</li>
 							</ul>
-							<div class="header__icon__wrapper d-flex align-content-center mt-4">
-								<div class="header__icon header--user">
-									<div class="header__search__icon d-flex align-content-center" data-bs-toggle="dropdown" aria-expanded="false" role="button">
-										<a href="javascipt: void(0);">
-											<img src="./assets/images/icons/user.svg" class="in__svg" alt="User">
-										</a>
-									</div>
-									<div class="dropdown-menu dropdown-menu-end">
-										<a class="dropdown-item" href="#">Profile</a>
-										<a class="dropdown-item" href="#">Order History</a>
-										<a class="dropdown-item" href="#">Logout</a>
-									</div>
-								</div>
-								<div class="header__icon header--whistlist">
-									<div class="whistlist__icon d-flex align-content-center">
-										<a href="javascipt: void(0);">
-											<img src="./assets/images/icons/whistlist.svg" class="in__svg" alt="Whistlist">
-										</a>
-									</div>
-								</div>
-							</div>
 						</div>
 					</div>
 					<div class="header__logo">
@@ -208,10 +176,44 @@
 							<img class="header-logo" src="./assets/images/amuleti-logo.png" width="292" height="85" alt="Amuleti">
 						</a>
 					</div>
-					<div class="header__icon header--cart">
-						<div class="cart__icon d-flex align-content-center">
-							<img src="./assets/images/icons/bag.svg" class="in__svg" alt="Cart">
-							<span class="cart__count">3</span>
+					<div class="header__icons">
+						<ul class="site__languages list-unstyled d-flex align-content-center mt-3 mb-0">
+							<li>
+								<a href="#">Italiano</a>
+							</li>
+							<li>
+								<a href="#">Español</a>
+							</li>
+							<li class="active">
+								<a href="#">English</a>
+							</li>
+						</ul>
+						<div class="header__icon__wrapper d-flex align-content-center justify-content-end mt-4">
+							<div class="header__icon header--user">
+								<div class="header__search__icon d-flex align-content-center" data-bs-toggle="dropdown" aria-expanded="false" role="button">
+									<a href="javascipt: void(0);">
+										<img src="./assets/images/icons/user.svg" class="in__svg" alt="User">
+									</a>
+								</div>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a class="dropdown-item" href="#">Profile</a>
+									<a class="dropdown-item" href="#">Order History</a>
+									<a class="dropdown-item" href="#">Logout</a>
+								</div>
+							</div>
+							<div class="header__icon header--whistlist">
+								<div class="whistlist__icon d-flex align-content-center">
+									<a href="javascipt: void(0);">
+										<img src="./assets/images/icons/whistlist.svg" class="in__svg" alt="Whistlist">
+									</a>
+								</div>
+							</div>
+							<div class="header__icon header--cart">
+								<div class="cart__icon d-flex align-content-center">
+									<img src="./assets/images/icons/bag.svg" class="in__svg" alt="Cart">
+									<span class="cart__count">3</span>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
