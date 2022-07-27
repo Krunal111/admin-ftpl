@@ -676,6 +676,9 @@ header.fixed {
 .inner__pages .main-content {
     margin-top: 15rem;
 }
+.mobile__product__sort {
+    display: none;
+}
 .category__filter__header {
     background-color: var(--secondcolor);
     padding: 15px;
@@ -729,6 +732,9 @@ header.fixed {
 .product__category__item .accordion-body li:not(:last-child) {
     margin-bottom: 10px;
 }
+.product__category__item .form-check .form-check-label {
+    cursor: pointer;
+}
 
 .form-check .form-check-input {
     border: 1px solid #A3A3A3;
@@ -774,6 +780,9 @@ header.fixed {
 }
 .products__list .product__item .product__img {
     padding-top: 70%;
+}
+.products__list .product__item .product__whishlist {
+    right: 1.4rem;
 }
 .products__list .product__item .product__action {
     margin-bottom: -2.688rem;
@@ -1215,6 +1224,10 @@ header.fixed {
     .popular__products__box {
         padding: 1.25rem 0.625rem;
     }
+    .product__star li svg {
+        width: 1.125rem;
+        height: 1.125rem;
+    }
     /* Popular Products Block CSS End */
 
     /* Offer Block CSS Start */
@@ -1272,15 +1285,114 @@ header.fixed {
     /* Rings Block CSS End */
 
     /* Category Page CSS Start */
-    .inner__pages .main-content {
-        margin-top: 6.75rem;
+    .inner__pages .header {
+        border: none;
+        padding-bottom: 0;
     }
+    .inner__pages .main-content {
+        margin-top: 5.188rem;
+    }
+
+    .products__browse {
+        margin-bottom: 1.5rem;
+    }
+    .products__browse h1 {
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #464646;
+    }
+    .filter__header__warpper {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .product__category__lis, .product__sort {
+        display: none;
+    }
+    .product__category__list.show {
+        display: block;
+        margin: -15px -6px;
+        min-height: 100px;
+        max-height: 270px;
+        overflow: auto;
+        position: relative;
+        box-shadow: 0 1px 0 0 #cccccc;
+    }
+    .mobile__product__sort {
+        display: block;
+        margin-left: 1px;
+        width: 50%;
+        text-align: center;
+    }
+    .mobile__product__sort > a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1rem;
+        line-height: normal;
+        font-size: 1.125rem;
+        font-weight: 700;
+        text-align: center;
+        background-color: var(--secondcolor);
+        padding: 10px 15px;
+        height: 50px;
+        color: #ffffff;
+    }
+    .mobile__product__sort a img {
+        margin-left: 0.6rem;
+    }
+    .category__filter__header {
+        width: 50%;
+        text-align: center;
+    }
+    .product__category__list {
+        display: none;
+    }
+
     .offfer__item.category-offer .offfer__cta {
         width: auto;
+        left: 30px;
     }
+    .offfer__item.category-offer .offfer__cta h2 {
+        font-size: 2.375rem;
+        margin-bottom: 0.5rem;
+        line-height: normal;
+    }
+    .offfer__item.category-offer .offfer__cta h2 span {
+        text-align: left !important;
+    }
+    .offfer__item.category-offer .offfer__cta .btn {
+        padding: 7px 14px;
+        font-size: 14px;
+    }
+    .offfer__banner img {
+        object-position: 30% center;
+    }
+
     .products__list .col-sm-6 {
         flex: 0 0 auto;
         width: 50%;
+    }
+    .products__list .row {
+        margin: 0 -4px;
+    }
+    .products__list .col-sm-6 {
+        padding: 0 4px;
+    }
+    .products__list .product__item .product__img {
+        padding-top: 95%;
+    }
+    .products__list .product__item .product__whishlist {
+        right: 0.938rem;
+        top: 0.938rem;
+    }
+    .products__list .product__item .product__action {
+        margin-bottom: -2.5rem;
+        margin-top: 0.938rem;
+    }
+    .products__list .product__item .product__action .btn {
+        padding: 0.313rem 0.938rem;
+        font-size: 0.875rem;
     }
     /* Category Page CSS End */
 
@@ -1351,7 +1463,13 @@ header.fixed {
     .mobile__social { display: flex; margin-bottom: 30px; }
     /* Footer CSS End */
 }
-
+@media (max-width: 575px) {
+    /* Category Page CSS Start */
+    .filter__header__warpper {
+        margin: 0 calc(-.5 * var(--bs-gutter-x)) 20px;
+    }
+    /* Category Page CSS End */
+}
 @media (max-width: 360px) {
     /* Header CSS Start */
     .mobile__menu__main {

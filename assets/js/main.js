@@ -27,6 +27,10 @@ var heroSlider = new Swiper(".hero__banner__slider", {
       el: ".swiper-pagination",
       clickable: true,
     },
+    autoplay: {
+      delay: 6000,
+      disableOnInteraction: false,
+    },
     breakpoints: {
       0: {
         autoHeight: true
@@ -45,6 +49,10 @@ var popularProductsSlider = new Swiper(".popular__products__slider", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
     },
     breakpoints: {
         0: {
@@ -66,6 +74,10 @@ var popularProductsSlider = new Swiper(".popular__products__slider", {
 var diamondProductsSlider = new Swiper(".diamond__products__slider", {
     slidesPerView: 1,
     spaceBetween: 24,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
     breakpoints: {
       0: {
         slidesPerView: 2,
@@ -87,6 +99,10 @@ var ringsSlider = new Swiper(".rings__slider", {
     slidesPerView: 3,
     grid: {
       rows: 2,
+    },
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
     },
     navigation: {
         nextEl: ".swiper-button-next",
@@ -135,3 +151,14 @@ function img2svg() {
 }
 img2svg();
 // SVG file to SVG code convert JS End
+
+// Filter By JS
+jQuery(document).ready(function()
+{
+    $('.category__filter__header').click(function () {
+        if ($(window).width() < 767) {
+            $('.product__category__list').toggleClass("show");
+        }
+    });
+});
+// Filter By JS
