@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amuleti | Home</title>
+    <title>Amuleti | The Darcia Chevron Ring</title>
 	<link rel="shortcut icon" sizes="64x64" href="./assets/images/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css" />
 	<link href="https://unpkg.com/swiper/swiper-bundle.min.css" type="text/css" rel="stylesheet" />
     <link href="./assets/css/style.css" type="text/css" rel="stylesheet" />
 </head>
-<body>
+<body class="inner__pages">
     <header class="header">
 		<div class="header__top" data-aos="fade-down">
 			<div class="container">
@@ -78,7 +79,7 @@
 						<div class="header__menu">
 							<ul class="nav list-unstyled mb-0">
 							  	<li class="nav-item">
-									<a class="nav-link" href="#">Rings</a>
+									<a class="nav-link" href="products.html">Rings</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="#">Earrings</a>
@@ -98,10 +99,10 @@
                     <div class="col-lg-4">
                         <div class="header__icons d-flex align-content-center justify-content-end">
 							<div class="header__icon header--search">
-								<div class="header__search__icon">
-									<img src="./assets/images/icons/search.svg" class="in__svg" alt="Search">
+								<div class="header__search__icon" data-bs-toggle="dropdown" aria-expanded="false" role="button">
+									<a href="javacript: void(0);"><img src="./assets/images/icons/search.svg" class="in__svg" alt="Search"></a>
 								</div>
-								<div class="header__search" style="display: none;">
+								<div class="header__search dropdown-menu dropdown-menu-end p-0 border-0">
 		                            <form action="#" method="post">
 		                                <input class="form-control" type="text" id="header-search" name="search" value="" placeholder="Search" aria-label="Search">
 		                                <button class="search__btn" type="submit">
@@ -112,7 +113,7 @@
 							</div>
                             <div class="header__icon header--user">
 								<div class="header__search__icon d-flex align-content-center" data-bs-toggle="dropdown" aria-expanded="false" role="button">
-									<img src="./assets/images/icons/user.svg" class="in__svg" alt="User">
+									<a href="javacript: void(0);"><img src="./assets/images/icons/user.svg" class="in__svg" alt="User"></a>
 								</div>
 								<div class="dropdown-menu dropdown-menu-end">
 									<a class="dropdown-item" href="#">Profile</a>
@@ -122,7 +123,7 @@
 							</div>
                             <div class="header__icon header--whistlist">
 								<div class="whistlist__icon d-flex align-content-center">
-									<img src="./assets/images/icons/whistlist.svg" class="in__svg" alt="Whistlist">
+									<a href="javacript: void(0);"><img src="./assets/images/icons/whistlist.svg" class="in__svg" alt="Whistlist"></a>
 								</div>
 							</div>
 							<div class="header__icon header--cart">
@@ -143,10 +144,10 @@
 			<div class="container">
 				<div class="mobile__wrapper d-flex align-content-center justify-content-between">
 					<div class="header__menu__col">
-						<div class="mobile_menu">
+						<div class="mobile_menu" data-bs-toggle="dropdown" aria-expanded="false" role="button">
 							<span class="mobile_menu-icon"></span>
 						</div>
-						<div class="header__menu">
+						<div class="header__menu dropdown-menu">
 							<ul class="nav list-unstyled">
 								<li class="nav-item">
 									<a class="nav-link" href="#">Rings</a>
@@ -164,43 +165,11 @@
 									<a class="nav-link" href="#">Pearls</a>
 								</li>
 							</ul>
-							<ul class="site__languages list-unstyled d-flex align-content-center mt-3 mb-0">
-								<li>
-									<a href="#">Italiano</a>
-								</li>
-								<li>
-									<a href="#">Español</a>
-								</li>
-								<li class="active">
-									<a href="#">English</a>
-								</li>
-							</ul>
 							<ul class="contact__link list-unstyled mb-0 mt-4">
 								<li>
 									<a class="d-flex align-content-center" title="Call us" href="tel:+39051273022"><img class="in__svg" src="./assets/images/icons/call.svg" alt="Call">+39 051 273022</a>
 								</li>
 							</ul>
-							<div class="header__icon__wrapper d-flex align-content-center mt-4">
-								<div class="header__icon header--user">
-									<div class="header__search__icon d-flex align-content-center" data-bs-toggle="dropdown" aria-expanded="false" role="button">
-										<a href="javascipt: void(0);">
-											<img src="./assets/images/icons/user.svg" class="in__svg" alt="User">
-										</a>
-									</div>
-									<div class="dropdown-menu dropdown-menu-end">
-										<a class="dropdown-item" href="#">Profile</a>
-										<a class="dropdown-item" href="#">Order History</a>
-										<a class="dropdown-item" href="#">Logout</a>
-									</div>
-								</div>
-								<div class="header__icon header--whistlist">
-									<div class="whistlist__icon d-flex align-content-center">
-										<a href="javascipt: void(0);">
-											<img src="./assets/images/icons/whistlist.svg" class="in__svg" alt="Whistlist">
-										</a>
-									</div>
-								</div>
-							</div>
 						</div>
 					</div>
 					<div class="header__logo">
@@ -208,10 +177,44 @@
 							<img class="header-logo" src="./assets/images/amuleti-logo.png" width="292" height="85" alt="Amuleti">
 						</a>
 					</div>
-					<div class="header__icon header--cart">
-						<div class="cart__icon d-flex align-content-center">
-							<img src="./assets/images/icons/bag.svg" class="in__svg" alt="Cart">
-							<span class="cart__count">3</span>
+					<div class="header__icons">
+						<ul class="site__languages list-unstyled d-flex align-content-center mt-3 mb-0">
+							<li>
+								<a href="#">Italiano</a>
+							</li>
+							<li>
+								<a href="#">Español</a>
+							</li>
+							<li class="active">
+								<a href="#">English</a>
+							</li>
+						</ul>
+						<div class="header__icon__wrapper d-flex align-content-center justify-content-end mt-4">
+							<div class="header__icon header--user">
+								<div class="header__search__icon d-flex align-content-center" data-bs-toggle="dropdown" aria-expanded="false" role="button">
+									<a href="javascipt: void(0);">
+										<img src="./assets/images/icons/user.svg" class="in__svg" alt="User">
+									</a>
+								</div>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a class="dropdown-item" href="#">Profile</a>
+									<a class="dropdown-item" href="#">Order History</a>
+									<a class="dropdown-item" href="#">Logout</a>
+								</div>
+							</div>
+							<div class="header__icon header--whistlist">
+								<div class="whistlist__icon d-flex align-content-center">
+									<a href="javascipt: void(0);">
+										<img src="./assets/images/icons/whistlist.svg" class="in__svg" alt="Whistlist">
+									</a>
+								</div>
+							</div>
+							<div class="header__icon header--cart">
+								<div class="cart__icon d-flex align-content-center">
+									<img src="./assets/images/icons/bag.svg" class="in__svg" alt="Cart">
+									<span class="cart__count">3</span>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -220,146 +223,276 @@
 	</header>
 
 	<main class="main-content">
-		<!-- Hero Banner Block Start -->
-		<section class="hero__banner" data-aos="fade-up">
-			<div class="swiper hero__banner__slider">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="hero__banner__item" style="background-image: url('./assets/images/hero-banner/hero-banner-1.jpg');">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-8">
-										<div class="hero__banner__content">
-											<h1 class="mb-4">Amuleti <br /><span>The Symbol of Tradition and Style</span></h1>
-											<a href="#" class="btn">Explore Now</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="hero__banner__item" style="background-image: url('./assets/images/hero-banner/hero-banner-1.jpg');">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-8">
-										<div class="hero__banner__content">
-											<h1 class="mb-4">Amuleti <br /><span>The Symbol of Tradition</span></h1>
-											<a href="#" class="btn">Explore Now</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="hero__banner__item" style="background-image: url('./assets/images/hero-banner/hero-banner-1.jpg');">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-8">
-										<div class="hero__banner__content">
-											<h1 class="mb-4">Amuleti <br /><span>The Symbol of Tradition and Style</span></h1>
-											<a href="#" class="btn">Explore Now</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-button swiper-button-next"></div>
-      			<div class="swiper-button swiper-button-prev"></div>
-				<div class="swiper-pagination"></div>
-			</div>
-		</section>
-		<!-- Hero Banner Block End -->
+        <!-- Product Details Block Start -->
+        <section class="product__details__block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav aria-label="breadcrumb">
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb__item">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="breadcrumb__item divider">
+                                    <img src="./assets/images/icons/chevron-right.svg" alt="Chevron ight">
+                                </li>
+                                <li class="breadcrumb__item">
+                                    <a href="#">Rings</a>
+                                </li>
+                                <li class="breadcrumb__item divider">
+                                    <img src="./assets/images/icons/chevron-right.svg" alt="Chevron ight">
+                                </li>
+                                <li class="breadcrumb__item active">
+                                    <a href="#">The Darcia Chevron Ring</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="single__product">
+                            <div class="product__large__image swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="product__large__item center--image">
+                                            <!-- <iframe allowfullscreen="" frameborder="0" src="//player.vimeo.com/video/400620468?title=0&amp;portrait=0&amp;byline=0&amp;autoplay=1&amp;muted=true"></iframe> -->
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product__large__item center--image">
+                                            <a href="./assets/images/products/product-large-img-2.png" data-lightbox="product-gellery" data-title="Ring Image">
+                                                <img src="./assets/images/products/product-large-img-2.png" alt="Product">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product__large__item center--image">
+                                            <a href="./assets/images/products/product-large-img-3.png" data-lightbox="product-gellery" data-title="Ring Image">
+                                                <img src="./assets/images/products/product-large-img-3.png" alt="Product">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product__large__item center--image">
+                                            <a href="./assets/images/products/product-large-img-4.png" data-lightbox="product-gellery" data-title="Ring Image">
+                                                <img src="./assets/images/products/product-large-img-4.png" alt="Product">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__thumb__image swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="product__thumb__item video__thumb center--image">
+                                            <img src="./assets/images/products/product-large-img-1.png" alt="Product">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product__thumb__item center--image">
+                                            <img src="./assets/images/products/product-large-img-2.png" alt="Product">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product__thumb__item center--image">
+                                            <img src="./assets/images/products/product-large-img-3.png" alt="Product">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product__thumb__item center--image">
+                                            <img src="./assets/images/products/product-large-img-4.png" alt="Product">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="single__product__details">
+                            <div class="product__rattings d-flex align-content-center justify-content-end">
+                                <h6 class="small fw-normal mb-0">Ratings</h6>
+                                <ul class="product__star d-flex align-content-center justify-content-center list-unstyled ms-2 my-0">
+                                    <li class="added">
+                                        <img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
+                                    </li>
+                                    <li class="added">
+                                        <img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
+                                    </li>
+                                    <li class="added">
+                                        <img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
+                                    </li>
+                                    <li class="added">
+                                        <img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
+                                    </li>
+                                    <li class="">
+                                        <img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="product__title">
+                                <span class="badge new-badge blue-bg">New!</span>
+                                <h1>The Darcia Chevron Ring</h1>
+                                <p class="mb-0"><span class="fw-bold">From</span> Chevron Rings Collection</p>
+                            </div>
+                            <div class="product__price">
+                                <h3>
+									<span>€19,935</span>
+									<div class="price__off">50% off on Making Charge</div>
+									<br />
+									<small>(Incl. of all taxes)</small>
+								</h3>
+                            </div>
+                            <div class="product__short__details">
+                                <p class="fw-bold mb-0">Details</p>
+                                <p>Diamond And White Pearl Ring In 18Kt Yellow Gold (1.7 gram) with Diamonds (0.0850 Ct)</p>
+                            </div>
+                            <div class="product__reference">
+                                <form action="#" method="post">
+                                    <div class="form-group d-flex mb-0">
+                                        <input type="text" name="reference" class="form-control" placeholder="Enter Reference">
+                                        <button type="submit" class="btn">Apply</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="product__size">
+                                <h6 class="fw-normal small">Size</h6>
+                                <ul class="product__size__list d-flex align-content-center list-unstyled mb-0">
+                                    <li>
+                                        <input type="radio" name="product-size" id="size-1" checked>
+                                        <label for="size-1">6</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="product-size" id="size-2">
+                                        <label for="size-2">8</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="product-size" id="size-3">
+                                        <label for="size-3">10</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="product-size" id="size-4">
+                                        <label for="size-4">12</label>
+                                    </li>
+                                    <li>
+                                        <label>+</label>
+                                    </li>
+                                    <li>
+                                        <p class="fw-normal small mb-0">Not sure about the ring size?</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="product__action">
+                                <div class="input-group">
+                                    <select class="form-select">
+                                      <option selected>Customize this product</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="product__action__btns d-grid gap-3">
+                                    <button type="submit" class="btn btn-lg">Add to Cart</button>
+                                    <a href="#" class="btn btn-lg btn-outline"><img class="in__svg" src="./assets/images/icons/whistlist.svg" alt=""> Add to Wishlist</a>
+                                </div>
+                                <div class="total__stocks">
+                                    <p class="mb-0">3 Total items in Stocks</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="single__product__description">
+                            <div class="product__details__item">
+                                <h5>Product Description</h5>
+                                <p>Solitaire in white gold, set with a 1-carat diamond ...</p>
+                                <p>Product reference: AD0393</p>
+                            </div>
+                            <div class="product__details__item">
+                                <h5>DETAILS:</h5>
+                                <p>White gold</p>
+                                <p>Weight(Approx) 5g Diamond, Center stone 1 carat, D VVS</p>
+                            </div>
+                            <hr>
+                            <div class="product__details__item">
+                                <h5>Warranty</h5>
+                                <p>Ex: GIA or the amuleti certificate depending on the jewelry</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="product__reviews">
+							<h5 class="mb-3">Customer Reviews</h5>
+                            <div class="product__review__item card">
+                                <div class="user__info d-flex">
+                                    <div class="user__img"><img src="./assets/images/icons/user.png" alt="user"></div>
+                                    <h6 class="mb-0 ms-2 fw-normal small">User Name</h6>
+                                </div>
+                                <div class="user__message">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                </div>
+                                <ul class="product__star d-flex align-content-center justify-content-start list-unstyled m-0">
+                                    <li class="added">
+                                        <img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
+                                    </li>
+                                    <li class="added">
+                                        <img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
+                                    </li>
+                                    <li class="added">
+                                        <img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
+                                    </li>
+                                    <li class="added">
+                                        <img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
+                                    </li>
+                                    <li class="">
+                                        <img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
+                                    </li>
+                                </ul>
+                            </div>
+							<div class="product__review__item card">
+                                <div class="user__info d-flex">
+                                    <div class="user__img"><img src="./assets/images/icons/user.png" alt="user"></div>
+                                    <h6 class="mb-0 ms-2 fw-normal small">User Name</h6>
+                                </div>
+                                <div class="user__message">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has bee.</p>
+                                </div>
+                                <ul class="product__star d-flex align-content-center justify-content-start list-unstyled m-0">
+                                    <li class="added">
+                                        <img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
+                                    </li>
+                                    <li class="added">
+                                        <img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
+                                    </li>
+                                    <li class="added">
+                                        <img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
+                                    </li>
+                                    <li class="added">
+                                        <img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
+                                    </li>
+                                    <li class="">
+                                        <img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Product Details Block End -->
 
-		<!-- Category Block Start -->
-		<section class="categories secondary-bg">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="main__title text-center mb-5" data-aos="fade-up">
-							<h5 class="text-white fw-light mb-2">Luxury italian group since 1963</h5>
-							<h3 class="mb-0 text-uppercase text-white">Jewelry collection</h3>
-						</div>
-					</div>
-				</div>
-				<div class="row categories__list">
-					<div class="col" data-aos="fade-up">
-						<div class="category__item">
-							<a href="#">
-								<div class="category__image center--image">
-									<img src="./assets/images/category-banner/category-banner-1.jpg" width="209" height="264" alt="Rings">
-								</div>
-								<div class="category__name">
-									<h5 class="mb-0">Rings</h5>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col" data-aos="fade-up">
-						<div class="category__item">
-							<a href="#">
-								<div class="category__image center--image">
-									<img src="./assets/images/category-banner/category-banner-2.jpg" width="209" height="264" alt="Earrings">
-								</div>
-								<div class="category__name">
-									<h5 class="mb-0">Earrings</h5>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col" data-aos="fade-up">
-						<div class="category__item">
-							<a href="#">
-								<div class="category__image center--image">
-									<img src="./assets/images/category-banner/category-banner-3.jpg" width="209" height="264" alt="Bracelets">
-								</div>
-								<div class="category__name">
-									<h5 class="mb-0">Bracelets</h5>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col" data-aos="fade-up">
-						<div class="category__item">
-							<a href="#">
-								<div class="category__image center--image">
-									<img src="./assets/images/category-banner/category-banner-4.jpg" width="209" height="264" alt="Necklaces & Pendants">
-								</div>
-								<div class="category__name">
-									<h5 class="mb-0">Necklaces & Pendants</h5>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col" data-aos="fade-up">
-						<div class="category__item">
-							<a href="#">
-								<div class="category__image center--image">
-									<img src="./assets/images/category-banner/category-banner-5.jpg" width="209" height="264" alt="Pearls">
-								</div>
-								<div class="category__name">
-									<h5 class="mb-0">Pearls</h5>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Category Block End -->
 
-		<!-- Popular Products Block Start -->
+		<!-- Related Products Block Start -->
 		<section class="popular__products">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="popular__products__box">
 							<div class="main__title text-center mb-5" data-aos="fade-up">
-								<h5 class="fw-light mb-2">Luxury italian group since 1963</h5>
-								<h3 class="mb-0">Most Popular Products</h3>
+								<h3 class="mb-0">Related Products</h3>
 							</div>
 							<div class="popular__products__slider swiper">
 								<div class="swiper-wrapper">
@@ -369,7 +502,7 @@
 												<a href="#"><img src="./assets/images/products/product-img-1.png" width="179" height="161" alt="Product Name"></a>
 											</div>
 											<div class="product__des text-center">
-												<div class="product__whishlist added">
+												<div class="product__whishlist">
 													<img class="in__svg" src="./assets/images/icons/whistlist.svg" alt="Whistlist">
 												</div>
 												<h6 class="product__name">Lorem Ipsum is dummy text</h6>
@@ -622,426 +755,7 @@
 				</div>
 			</div>
 		</section>
-		<!-- Popular Products Block End -->
-
-		<!-- Offer Block Start -->
-		<section class="offfer__block">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="offfer__item position-relative" data-aos="fade-up">
-							<div class="offfer__banner center--image">
-								<img src="./assets/images/offer-banner.jpg" width="1142" height="377" alt="Offer Banner">
-							</div>
-							<div class="offfer__cta">
-								<a href="#" class="btn">Explore Now</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Offer Block End -->
-
-		<!-- Diamond Products Block Start -->
-		<section class="popular__products">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="popular__products__box diamond__products">
-							<div class="main__title text-center mb-5" data-aos="fade-up">
-								<h5 class="fw-light mb-2">Beautiful colors & excellent quality</h5>
-								<h3 class="mb-0">Diamond Jewellery</h3>
-							</div>
-							<div class="diamond__products__slider swiper">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<div class="product__item" data-aos="fade-up">
-											<div class="product__img center--image">
-												<a href="#"><img src="./assets/images/products/product-img-6.png" width="179" height="161" alt="Product Name"></a>
-											</div>
-											<div class="product__des text-center">
-												<div class="product__whishlist added">
-													<img class="in__svg" src="./assets/images/icons/whistlist.svg" alt="Whistlist">
-												</div>
-												<h6 class="product__name">Lorem Ipsum is dummy text</h6>
-												<h6 class="product__price">Price <span class="fw-bold">€ 10.90</span></h6>
-												<ul class="product__star d-flex align-content-center justify-content-center list-unstyled mb-0">
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="product__item" data-aos="fade-up">
-											<div class="product__img center--image">
-												<a href="#"><img src="./assets/images/products/product-img-7.png" width="179" height="161" alt="Product Name"></a>
-											</div>
-											<div class="product__des text-center">
-												<div class="product__whishlist">
-													<img class="in__svg" src="./assets/images/icons/whistlist.svg" alt="Whistlist">
-												</div>
-												<h6 class="product__name">Lorem Ipsum is dummy text</h6>
-												<h6 class="product__price">Price <span class="fw-bold">€ 10.90</span></h6>
-												<ul class="product__star d-flex align-content-center justify-content-center list-unstyled mb-0">
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li>
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="product__item" data-aos="fade-up">
-											<div class="product__img center--image">
-												<a href="#"><img src="./assets/images/products/product-img-8.png" width="179" height="161" alt="Product Name"></a>
-											</div>
-											<div class="product__des text-center">
-												<div class="product__whishlist">
-													<img class="in__svg" src="./assets/images/icons/whistlist.svg" alt="Whistlist">
-												</div>
-												<h6 class="product__name">Lorem Ipsum is dummy text</h6>
-												<h6 class="product__price">Price <span class="fw-bold">€ 10.90</span></h6>
-												<ul class="product__star d-flex align-content-center justify-content-center list-unstyled mb-0">
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li>
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="product__item" data-aos="fade-up">
-											<div class="product__img center--image">
-												<a href="#"><img src="./assets/images/products/product-img-9.png" width="179" height="161" alt="Product Name"></a>
-											</div>
-											<div class="product__des text-center">
-												<div class="product__whishlist">
-													<img class="in__svg" src="./assets/images/icons/whistlist.svg" alt="Whistlist">
-												</div>
-												<h6 class="product__name">Lorem Ipsum is dummy text</h6>
-												<h6 class="product__price">Price <span class="fw-bold">€ 10.90</span></h6>
-												<ul class="product__star d-flex align-content-center justify-content-center list-unstyled mb-0">
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li>
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="product__item" data-aos="fade-up">
-											<div class="product__img center--image">
-												<a href="#"><img src="./assets/images/products/product-img-10.png" width="179" height="161" alt="Product Name"></a>
-											</div>
-											<div class="product__des text-center">
-												<div class="product__whishlist">
-													<img class="in__svg" src="./assets/images/icons/whistlist.svg" alt="Whistlist">
-												</div>
-												<h6 class="product__name">Lorem Ipsum is dummy text</h6>
-												<h6 class="product__price">Price <span class="fw-bold">€ 10.90</span></h6>
-												<ul class="product__star d-flex align-content-center justify-content-center list-unstyled mb-0">
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li class="added">
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-													<li>
-														<img class="in__svg" src="./assets/images/icons/star.svg" alt="Star">
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="view__more d-flex align-content-center justify-content-center" data-aos="fade-up">
-									<a href="#" class="btn">Explore Now</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Diamond Products Block End -->
-
-		<!-- Rings Block Start -->
-		<section class="rings__block">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="main__title text-center mb-4" data-aos="fade-up">
-							<h3 class="mb-2">New Rings For You!</h3>
-							<h5 class="fw-light mb-0">Lorem Ipsum is a dummy text</h5>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="rings__slider swiper">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<div class="ring_product__item" data-aos="fade-up">
-										<div class="ring_product__img center--image">
-											<a href="#"><img src="./assets/images/rings/ring_img-1.jpg" width="319" height="191" alt="Product Name"></a>
-										</div>
-										<div class="ring_product__des">
-											<h6 class="mb-0">Lorem Ipsum is dummy text</h6>
-											<p class="mb-0">Lorem Ipsum</p>
-											<div class="ring_product__action d-flex align-content-center justify-content-between">
-												<h5 class="ring_product__price mb-0"><span class="d-block">Price Range</span>€ 10.90</h5>
-												<div class="ring_product__link">
-													<a href="#"><img class="in__svg" src="./assets/images/icons/right-arrow.svg" alt="Arrow"></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide ringe__single__col">
-									<div class="ring_product__item ringe__single" data-aos="fade-up">
-										<div class="ring_product__img center--image">
-											<a href="#"><img src="./assets/images/rings/ring_img-2.jpg" width="379" height="379" alt="Product Name"></a>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="ring_product__item" data-aos="fade-up">
-										<div class="ring_product__img center--image">
-											<a href="#"><img src="./assets/images/rings/ring_img-3.jpg" width="319" height="191" alt="Product Name"></a>
-										</div>
-										<div class="ring_product__des">
-											<h6 class="mb-0">Lorem Ipsum is dummy text</h6>
-											<p class="mb-0">Lorem Ipsum</p>
-											<div class="ring_product__action d-flex align-content-center justify-content-between">
-												<h5 class="ring_product__price mb-0"><span class="d-block">Price Range</span>€ 10.90</h5>
-												<div class="ring_product__link">
-													<a href="#"><img class="in__svg" src="./assets/images/icons/right-arrow.svg" alt="Arrow"></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="ring_product__item" data-aos="fade-up">
-										<div class="ring_product__img center--image">
-											<a href="#"><img src="./assets/images/rings/ring_img-4.jpg" width="319" height="191" alt="Product Name"></a>
-										</div>
-										<div class="ring_product__des">
-											<h6 class="mb-0">Lorem Ipsum is dummy text</h6>
-											<p class="mb-0">Lorem Ipsum</p>
-											<div class="ring_product__action d-flex align-content-center justify-content-between">
-												<h5 class="ring_product__price mb-0"><span class="d-block">Price Range</span>€ 10.90</h5>
-												<div class="ring_product__link">
-													<a href="#"><img class="in__svg" src="./assets/images/icons/right-arrow.svg" alt="Arrow"></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="ring_product__item" data-aos="fade-up">
-										<div class="ring_product__img center--image">
-											<a href="#"><img src="./assets/images/rings/ring_img-5.jpg" width="319" height="191" alt="Product Name"></a>
-										</div>
-										<div class="ring_product__des">
-											<h6 class="mb-0">Lorem Ipsum is dummy text</h6>
-											<p class="mb-0">Lorem Ipsum</p>
-											<div class="ring_product__action d-flex align-content-center justify-content-between">
-												<h5 class="ring_product__price mb-0"><span class="d-block">Price Range</span>€ 10.90</h5>
-												<div class="ring_product__link">
-													<a href="#"><img class="in__svg" src="./assets/images/icons/right-arrow.svg" alt="Arrow"></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="ring_product__item" data-aos="fade-up">
-										<div class="ring_product__img center--image">
-											<a href="#"><img src="./assets/images/rings/ring_img-6.jpg" width="319" height="191" alt="Product Name"></a>
-										</div>
-										<div class="ring_product__des">
-											<h6 class="mb-0">Lorem Ipsum is dummy text</h6>
-											<p class="mb-0">Lorem Ipsum</p>
-											<div class="ring_product__action d-flex align-content-center justify-content-between">
-												<h5 class="ring_product__price mb-0"><span class="d-block">Price Range</span>€ 10.90</h5>
-												<div class="ring_product__link">
-													<a href="#"><img class="in__svg" src="./assets/images/icons/right-arrow.svg" alt="Arrow"></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="ring_product__item" data-aos="fade-up">
-										<div class="ring_product__img center--image">
-											<a href="#"><img src="./assets/images/rings/ring_img-1.jpg" width="319" height="191" alt="Product Name"></a>
-										</div>
-										<div class="ring_product__des">
-											<h6 class="mb-0">Lorem Ipsum is dummy text</h6>
-											<p class="mb-0">Lorem Ipsum</p>
-											<div class="ring_product__action d-flex align-content-center justify-content-between">
-												<h5 class="ring_product__price mb-0"><span class="d-block">Price Range</span>€ 10.90</h5>
-												<div class="ring_product__link">
-													<a href="#"><img class="in__svg" src="./assets/images/icons/right-arrow.svg" alt="Arrow"></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="ring_product__item" data-aos="fade-up">
-										<div class="ring_product__img center--image">
-											<a href="#"><img src="./assets/images/rings/ring_img-2.jpg" width="319" height="191" alt="Product Name"></a>
-										</div>
-										<div class="ring_product__des">
-											<h6 class="mb-0">Lorem Ipsum is dummy text</h6>
-											<p class="mb-0">Lorem Ipsum</p>
-											<div class="ring_product__action d-flex align-content-center justify-content-between">
-												<h5 class="ring_product__price mb-0"><span class="d-block">Price Range</span>€ 10.90</h5>
-												<div class="ring_product__link">
-													<a href="#"><img class="in__svg" src="./assets/images/icons/right-arrow.svg" alt="Arrow"></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="ring_product__item" data-aos="fade-up">
-										<div class="ring_product__img center--image">
-											<a href="#"><img src="./assets/images/rings/ring_img-3.jpg" width="319" height="191" alt="Product Name"></a>
-										</div>
-										<div class="ring_product__des">
-											<h6 class="mb-0">Lorem Ipsum is dummy text</h6>
-											<p class="mb-0">Lorem Ipsum</p>
-											<div class="ring_product__action d-flex align-content-center justify-content-between">
-												<h5 class="ring_product__price mb-0"><span class="d-block">Price Range</span>€ 10.90</h5>
-												<div class="ring_product__link">
-													<a href="#"><img class="in__svg" src="./assets/images/icons/right-arrow.svg" alt="Arrow"></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="ring_product__item" data-aos="fade-up">
-										<div class="ring_product__img center--image">
-											<a href="#"><img src="./assets/images/rings/ring_img-4.jpg" width="319" height="191" alt="Product Name"></a>
-										</div>
-										<div class="ring_product__des">
-											<h6 class="mb-0">Lorem Ipsum is dummy text</h6>
-											<p class="mb-0">Lorem Ipsum</p>
-											<div class="ring_product__action d-flex align-content-center justify-content-between">
-												<h5 class="ring_product__price mb-0"><span class="d-block">Price Range</span>€ 10.90</h5>
-												<div class="ring_product__link">
-													<a href="#"><img class="in__svg" src="./assets/images/icons/right-arrow.svg" alt="Arrow"></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="ring_product__item" data-aos="fade-up">
-										<div class="ring_product__img center--image">
-											<a href="#"><img src="./assets/images/rings/ring_img-5.jpg" width="319" height="191" alt="Product Name"></a>
-										</div>
-										<div class="ring_product__des">
-											<h6 class="mb-0">Lorem Ipsum is dummy text</h6>
-											<p class="mb-0">Lorem Ipsum</p>
-											<div class="ring_product__action d-flex align-content-center justify-content-between">
-												<h5 class="ring_product__price mb-0"><span class="d-block">Price Range</span>€ 10.90</h5>
-												<div class="ring_product__link">
-													<a href="#"><img class="in__svg" src="./assets/images/icons/right-arrow.svg" alt="Arrow"></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="ring_product__item" data-aos="fade-up">
-										<div class="ring_product__img center--image">
-											<a href="#"><img src="./assets/images/rings/ring_img-6.jpg" width="319" height="191" alt="Product Name"></a>
-										</div>
-										<div class="ring_product__des">
-											<h6 class="mb-0">Lorem Ipsum is dummy text</h6>
-											<p class="mb-0">Lorem Ipsum</p>
-											<div class="ring_product__action d-flex align-content-center justify-content-between">
-												<h5 class="ring_product__price mb-0"><span class="d-block">Price Range</span>€ 10.90</h5>
-												<div class="ring_product__link">
-													<a href="#"><img class="in__svg" src="./assets/images/icons/right-arrow.svg" alt="Arrow"></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-button-wrapper" data-aos="fade-up">
-								<div class="swiper-button swiper-button-prev"></div>
-								<div class="swiper-button swiper-button-next"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Rings Block End -->
+		<!-- Related Products Block End -->
 	</main>
 
 	<footer class="footer">
@@ -1268,6 +982,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>

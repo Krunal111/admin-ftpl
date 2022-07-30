@@ -124,6 +124,18 @@ var ringsSlider = new Swiper(".rings__slider", {
 });
 // Rings Slider JS End
 
+var productThumb = new Swiper(".product__thumb__image", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var productLarge = new Swiper(".product__large__image", {
+  thumbs: {
+    swiper: productThumb,
+  },
+});
+
 // SVG file to SVG code convert JS Start
 function img2svg() {
   jQuery('.in__svg').each(function (i, e) {
