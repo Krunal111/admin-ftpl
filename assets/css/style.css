@@ -869,6 +869,7 @@ header.fixed {
 }
 .product__thumb__image {
     margin-top: 1.25rem;
+    padding-bottom: 1px;
 }
 .product__thumb__item {
     padding-top: 75%;
