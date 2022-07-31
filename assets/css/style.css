@@ -1548,8 +1548,31 @@ header.fixed {
 .order__summary .order__summary__footer .form-check-label {
     font-size: 0.875rem;
     margin-bottom: 1rem;
+    cursor: pointer;
+}
+.order__summary .order__summary__footer .form-check-label a {
+    color: var(--bluecolor);
 }
 /* Shopping Checkout Page CSS End */
+
+/* Thank You Page CSS Start */
+.thank__you--block {
+    margin-top: 3.75em;
+}
+.thank__you img {
+    width: 6.25rem;
+    height: 6.25rem;
+}
+.thank__you h1 {
+    font-size: 1.625rem;
+    line-height: 1.3;
+    margin: 1.4rem 0 0.8rem;
+}
+.thank__you p {
+    font-size: 1.25rem;
+    color: #7C7C7C;
+}
+/* Thank You Page CSS End */
 
 /* Payment Page CSS Start */
 .payment__method__list .payment__method:not(:last-child) {
@@ -2440,6 +2463,12 @@ header.fixed {
         align-items: flex-start;
     }
     /* Payment Page CSS End */
+
+    /* Thank You Page CSS Start */
+    .thank__you h1 {
+        font-size: 1.6rem;
+    }
+    /* Thank You Page CSS End */
 }
 @media (max-width: 360px) {
     /* Header CSS Start */
