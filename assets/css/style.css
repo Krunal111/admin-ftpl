@@ -100,9 +100,16 @@ img {
         max-width: 1166px;
     }
 }
+.form-group {
+    margin-bottom: 1rem;
+    position: relative;
+}
+.form-group .form-control + .form-control {
+    margin-top: 1rem;
+}
 .form-control {
     height: auto;
-    padding: 0.75rem 1.25rem;
+    padding: 0.75rem 1.2rem;
     border: 1px solid #ECE8E8;
     border-radius: 0.313rem;
 }
@@ -1422,6 +1429,128 @@ header.fixed {
 }
 /* Shopping Cart Page CSS End */
 
+/* Shopping Checkout Page CSS Start */
+.shopping__checkout--block {
+    margin-top: 2.5rem;
+}
+.shopping__checkout__item:not(:last-child) {
+    margin-bottom: 2rem;
+}
+.shopping__checkout__item h3 {
+    font-size: 1.625rem;
+    color: #464646;
+}
+.shopping__checkout--block .card {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.14);
+    border-radius: 4px;
+    padding: 2rem 1.125rem;
+    border: none;
+}
+.shopping__checkout__item .form-group p a {
+    color: var(--bluecolor);
+}
+
+.shopping__checkout__item .form-group {
+    margin-bottom: 2rem;
+}
+.form-floating .form-group > label {
+    position: absolute;
+    top: -0.625rem;
+    left: 1.5rem;
+    right: auto;
+    bottom: auto;
+    font-size: 0.75rem;
+    background-color: #ffffff;
+    color: #828282;
+    padding: 0 0.5rem;
+}
+.shopping__checkout__item .form-check .form-check-label {
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.shopping__checkout--block .order__summary {
+    margin-left: 1.25rem;
+}
+.order__review__item {
+    position: relative;
+}
+.order__review__item:not(:last-child) {
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 2px;
+    margin-bottom: 1.25rem;
+}
+.order__review__item .order__review__delete {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    bottom: auto;
+    cursor: pointer;
+}
+.order__review__item .order__review__img {
+    width: 25%;
+    flex: 0 0 25%;
+}
+.order__review__item .order__review__img .center--image {
+   padding-top: 100%;
+}
+.order__review__item .order__review__img img {
+    object-fit: contain;
+}
+.order__review__item .order__review__details {
+    width: 75%;
+    flex: 0 0 75%;
+    padding-left: 1.875rem;
+}
+.order__review__details .product__qty {
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.order__review__details .product__qty button {
+    border: 1px solid #B2BCCA;
+    box-shadow: 0px 2px 40px rgba(133, 133, 133, 0.08);
+    border-radius: 3px;
+    font-weight: 300;
+    padding: 0;
+    width: 1.813rem;
+    height: 1.813rem;
+}
+.order__review__details .product__qty input {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #4F4F4F;
+    width: 2rem;
+}
+.order__review__details .product__qty input::-webkit-inner-spin-button, 
+.order__review__details .product__qty input::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+.order__review__details .product__price {
+    text-align: right;
+    margin-top: -1.25rem;
+}
+.order__review__details .product__price h6 {
+    font-size: 0.938rem;
+    font-weight: 600;
+}
+.order__summary .order__summary__item {
+    border-top: 1px solid #18A0FB;
+    padding-top: 1.2rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0;
+}
+.order__summary .order__summary__footer .form-check-label {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+/* Shopping Checkout Page CSS End */
+
 /* Footer CSS Start */
 .footer {
     margin-top: 3.438rem;
@@ -2117,6 +2246,12 @@ header.fixed {
         padding-top: 50%;
     }
     /* Shopping Cart Page CSS End */
+
+    /* Shopping Checkout Page CSS Start */
+    .shopping__checkout__item .form-group.mb-2 + .form-group.mb-2 {
+        margin-top: 2rem !important;
+    }
+    /* Shopping Checkout Page CSS End */
 
     /* Footer CSS Start */
     .footer {
