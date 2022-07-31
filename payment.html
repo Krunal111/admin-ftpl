@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amuleti | Payment</title>
+	<link rel="shortcut icon" sizes="64x64" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link href="https://unpkg.com/swiper/swiper-bundle.min.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css">
+    <link href="./assets/css/style.css" type="text/css" rel="stylesheet" />
+</head>
+<body class="shopping__pages">
+    <header class="header">
+		<div class="header__top" data-aos="fade-down">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4">
+						<ul class="contact__link list-unstyled mb-0 d-none">
+							<li>
+								<a class="d-flex align-content-center" title="Call us" href="tel:+39051273022"><img class="in__svg" src="./assets/images/icons/call.svg" alt="Call">+39 051 273022</a>
+							</li>
+						</ul>
+					</div>
+					<div class="logo col-lg-4 col-md-4">
+						<div class="header__logo">
+							<a href="index.html">
+								<img class="header-logo" src="./assets/images/amuleti-logo.png" width="292" height="85" alt="Amuleti">
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4">
+						<div class="header__info d-flex align-content-center justify-content-end">
+							<ul class="login__links list-unstyled d-flex align-content-center mb-0">
+								<li>
+									<a href="#" data-bs-toggle="modal" data-bs-target="#loginModal"><img class="in__svg" src="./assets/images/icons/user.svg" alt="User"> Login</a>
+								</li>
+								<li>
+									<a href="#"><img class="in__svg" src="./assets/images/icons/lock.svg" alt="Lock"> 100% Secure</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="main-content">
+		<!-- Shopping Setps Block Start -->
+		<section class="shopping__steps secondary-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="shopping__wizard d-flex align-content-center justify-content-center list-unstyled mb-0">
+							<li>
+								<a href="#">Cart</a>
+							</li>
+							<li>
+								<a href="#">Delivery</a>
+							</li>
+							<li class="active">
+								<a href="#">Payment</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Shopping Setps Block End -->
+
+		<!-- Checkout Block Start -->
+		<section class="shopping__checkout--block">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<div class="shopping__checkout">
+							<form action="#" method="post">
+                                <div class="shopping__checkout__item form-floating">
+                                    <h3 class="mb-4 text-uppercase">Payment Method</h3>
+                                    <div class="card">
+                                        <div class="payment__method__list accordion" id="paymentMethod">
+                                            <div class="payment__method accordion-item">
+                                                <div class="accordion-header collapsed" data-bs-toggle="collapse" data-bs-target="#PayPal" aria-expanded="false" aria-controls="PayPal">
+                                                    <div class="payment__method__head d-flex justify-content-between">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="payment__method" id="PayPal">
+                                                            <label class="form-check-label" for="PayPal">PayPal</label>
+                                                        </div>
+                                                        <p class="small mb-0">You will be redirected to the PayPal website after submitting your order</p>
+                                                        <div class="payment__logo__list d-flex align-content-center">
+                                                            <div class="payment__logo">
+                                                                <img src="./assets/images/icons/payments/PayPal.svg" alt="PayPal">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="PayPal" class="accordion-collapse collapse" data-bs-parent="#paymentMethod">
+                                                    <div class="accordion-body">
+                                                        <h5>PayPal</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="payment__method accordion-item">
+                                                <div class="accordion-header" data-bs-toggle="collapse" data-bs-target="#Credit-Card" aria-expanded="true" aria-controls="Credit-Card">
+                                                    <div class="payment__method__head d-flex justify-content-between">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="payment__method" id="Credit-Card" checked>
+                                                            <label class="form-check-label" for="Credit-Card">Pay with Credit Card</label>
+                                                        </div>
+                                                        <div class="payment__logo__list d-flex align-content-center">
+                                                            <div class="payment__logo">
+                                                                <img src="./assets/images/icons/payments/visa.svg" alt="VISA">
+                                                            </div>
+                                                            <div class="payment__logo">
+                                                                <img src="./assets/images/icons/payments/Discover.svg" alt="Discover">
+                                                            </div>
+                                                            <div class="payment__logo">
+                                                                <img src="./assets/images/icons/payments/Maestro.svg" alt="Maestro">
+                                                            </div>
+                                                            <div class="payment__logo">
+                                                                <img src="./assets/images/icons/payments/Mastercard.svg" alt="Mastercard">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="Credit-Card" class="accordion-collapse collapse show" data-bs-parent="#paymentMethod">
+                                                    <div class="accordion-body pb-0">
+                                                        <div class="row">
+                                                            <div class="form-group col-lg-6 col-md-6">
+                                                                <label for="">Card number</label>
+                                                                <input type="text" name="card_no" value="1234 5678 9101 3456" class="form-control" placeholder="Card number">
+                                                            </div>
+                                                            <div class="form-group col-lg-6 col-md-6">
+                                                                <label for="">Expiration Date</label>
+                                                                <input type="text" name="expirer_date" class="form-control" placeholder="MM/YY">
+                                                            </div>
+                                                            <div class="form-group col-lg-6 col-md-6">
+                                                                <label for="">Card Security Code</label>
+                                                                <input type="password" name="security_coode" class="form-control" placeholder="***">
+                                                            </div>
+                                                            <div class="form-group d-flex align-content-center col-lg-6 col-md-6">
+                                                                <p class="security__code__info mb-0"><a href="#">What is this?</a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="security__terms mt-4">
+                                            <p class="d-flex align-content-center small mb-0"><img class="me-2" src="./assets/images/icons/security-lock.svg" alt="Lock"> We protect your payment information using encryption to provide bank-level security.</p>
+                                        </div>
+									</div>
+                                </div>
+                            </form>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="order__summary position-sticky card">
+                            <div class="order__review__head mb-3">
+                                <h6>Order Review</h6>
+                                <p class="mb-0">Total (2 Item)</p>
+                            </div>
+                            <div class="order__review__list">
+                                <div class="order__review__item d-flex">
+                                    <div class="order__review__delete">✕</div>
+									<div class="order__review__img">
+										<div class="center--image">
+											<a href="#"><img src="./assets/images/products/product-img-1.png" alt="Product Image"></a>
+										</div>
+									</div>
+                                    <div class="order__review__details">
+                                        <div class="product__title mb-3">
+											<h5 class="small mb-1">The Darcia Chevron Ring</h5>
+											<p class="small mb-0">Product Code: 074793-25404252</p>
+										</div>
+                                        <div class="product__qty">
+                                            <button class="qtyminus" aria-hidden="true">&minus;</button>
+                                            <input type="number" name="qty" id="qty" min="1" max="10" step="1" value="1">
+                                            <button class="qtyplus" aria-hidden="true">&plus;</button>
+                                        </div>
+                                        <div class="product__price">
+											<h6 class="mb-0">€19,965</h3>
+										</div>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="order__summary__body">
+								<div class="order__summary__item d-flex align-content-center justify-content-between">
+									<h4 class="mb-0">Total Payable</h4>
+									<h4 class="mb-0">€36,935</h4>
+								</div>
+							</div>
+							<div class="order__summary__footer">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="termsNpolicy" id="policy">
+                                    <label class="form-check-label" for="policy">Please check to acknowledge our <a href="#">Privacy & Terms Policy</a></label>
+                                </div>
+								<a href="#" class="btn w-100">Pay Now</a>
+								<p class="small mb-0">I have a voucher code / gift card</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Checkout Block End -->
+
+	</main>
+
+	<footer class="footer">
+		<div class="footer__newsletter brey-bg">
+			<div class="container">
+				<div class="newsletter">
+					<div class="newsletter__inner d-flex flex-wrap mb-4">
+						<h4 class="mb-0" data-aos="fade-up">Sign Up for Newsletter</h4>
+						<div class="newsletter__form" data-aos="fade-up">
+							<form action="#" method="post">
+								<div class="form-group d-flex flex-column flex-sm-row mb-0">
+									<input type="email" name="email" class="form-control form-control-lg" placeholder="Email ID">
+									<div class="input__group">
+										<button type="submit" name="submit" class="btn">Submit</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<p class="text-center mb-0" data-aos="fade-up">You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer__main secondary-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-6">
+						<div class="footer-widget">
+							<h5 class="text-white mb-3">Amuleti Bologna</h5>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<img class="in__svg" src="./assets/images/icons/map-pin.svg" alt="Map Pin">
+									<span><a href="#">40124 Bologna (BO) <br />
+										Italy - Via dell'Archiginnasio 4c</a></span>
+								</li>
+								<li>
+									<img class="in__svg" src="./assets/images/icons/call.svg" alt="Call">
+									<span>
+										<span>Phone. <a href="tel:+39051273022">+39 051 273022</a></span>
+										<span>Whatsapp: <a href="#">+39 351 6789913</a></span>
+									</span>
+								</li>
+								<li>
+									<img class="in__svg" src="./assets/images/icons/mail.svg" alt="Mail">
+									<span>
+										<span>Email: <a href="mailto:bologna@amuleti.it">bologna@amuleti.it</a></span>
+										<span>Web: <a href="www.amuleti.it" target="_blank">www.amuleti.it</a></span>
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="footer-widget">
+							<h5 class="text-white mb-3">Amuleti Srl Riccione </h5>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<img class="in__svg" src="./assets/images/icons/map-pin.svg" alt="Map Pin">
+									<span><a href="#">47838 Riccione (RN) Italy- Viale<br /> Maria Ceccarini, 26</a></span>
+								</li>
+								<li>
+									<img class="in__svg" src="./assets/images/icons/call.svg" alt="Call">
+									<span>
+										<span>Phone. <a href="tel:+390541693035">+39 0541693035  </a></span>
+										<span>Whatsapp: <a href="#">+39 351 6789913</a></span>
+									</span>
+								</li>
+								<li>
+									<img class="in__svg" src="./assets/images/icons/mail.svg" alt="Mail">
+									<span>
+										<span>Email: <a href="mailto:riccione@amuleti.it">riccione@amuleti.it</a></span>
+										<span>Web: <a href="www.amuleti.it" target="_blank">www.amuleti.it</a></span>
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="footer-widget">
+							<h5 class="text-white mb-3">Amuleti Srl Forte dei Marmi</h5>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<img class="in__svg" src="./assets/images/icons/map-pin.svg" alt="Map Pin">
+									<span><a href="#">55042 Forte dei Marmi (LU) <br /> Italy- Via Giuseppe Spinetti, 8d</a></span>
+								</li>
+								<li>
+									<img class="in__svg" src="./assets/images/icons/call.svg" alt="Call">
+									<span>
+										<span>Phone. <a href="tel:+390584345399">+39 0584345399</a></span>
+										<span>Whatsapp: <a href="#">+39 3516789913</a></span>
+									</span>
+								</li>
+								<li>
+									<img class="in__svg" src="./assets/images/icons/mail.svg" alt="Mail">
+									<span>
+										<span>Email: <a href="mailto:fdm@amuleti.it">fdm@amuleti.it</a></span>
+										<span>Web: <a href="www.amuleti.it" target="_blank">www.amuleti.it</a></span>
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__link__col col-lg-4 col-md-6">
+						<div class="footer-widget">
+							<h5 class="text-white mb-3">Quick Links</h5>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="#">Maison</a>
+								</li>
+								<li>
+									<a href="#">Sitemap</a>
+								</li>
+								<li>
+									<a href="#">Note Legali</a>
+								</li>
+								<li>
+									<a href="#">Terms & conditions</a>
+								</li>
+								<li>
+									<a href="#">Privacy</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__link__col col-lg-4 col-md-6">
+						<div class="footer-widget">
+							<h5 class="text-white mb-3">About Us</h5>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="#">Shipping Policy</a>
+								</li>
+								<li>
+									<a href="#">Privacy Policy</a>
+								</li>
+								<li>
+									<a href="#">Terms and Conditions</a>
+								</li>
+								<li>
+									<a href="#">Return & Exchange Policy</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="footer-widget">
+							<div class="support__col mb-5">
+								<h5 class="text-white mb-3">Support Mail</h5>
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="mailto:support@amuleti.it">support@amuleti.it</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__social mobile__social">
+								<h5 class="text-white mb-0">Follow US</h5>
+								<ul class="social__icons list-unstyled d-flex align-content-center mb-0">
+									<li>
+										<a href="#">
+											<img class="in__svg" src="./assets/images/icons/social-icons/facebook.svg" alt="Facebook">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img class="in__svg" src="./assets/images/icons/social-icons/instagram.svg" alt="Instagram.svg">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img class="in__svg" src="./assets/images/icons/social-icons/twitter.svg" alt="Twitter.svg">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img class="in__svg" src="./assets/images/icons/social-icons/pinterest.svg" alt="Pinterest.svg">
+										</a>
+									</li>
+								</ul>
+							</div>
+							<h5 class="text-white mb-3">Payment Mode</h5>
+							<div class="payment__mode">
+								<img src="./assets/images/icons/payment-mode.png" width="265" height="40" alt="Payment mode">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer__copyright">
+					<div class="row">
+						<div class="col-md-6 desktop__social">
+							<div class="footer__social d-flex">
+								<h5 class="text-white mb-0">Follow US</h5>
+								<ul class="social__icons list-unstyled d-flex align-content-center mb-0">
+									<li>
+										<a href="#">
+											<img class="in__svg" src="./assets/images/icons/social-icons/facebook.svg" alt="Facebook">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img class="in__svg" src="./assets/images/icons/social-icons/instagram.svg" alt="Instagram.svg">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img class="in__svg" src="./assets/images/icons/social-icons/twitter.svg" alt="Twitter.svg">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img class="in__svg" src="./assets/images/icons/social-icons/pinterest.svg" alt="Pinterest.svg">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<p class="copyright__text mb-0 text-end">© Amuleti.it <script>document.write(new Date().getFullYear())</script> All Rights Reserved</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Modal -->
+	<div class="login__modal modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body p-0">
+					<div class="login__box d-flex flex-wrap">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div class="login__banner" style="background-image: url('./assets/images/modal-banner.jpg');"></div>
+						<div class="login__content">
+							<h4 class="text-uppercase mb-4">Login or Signup</h4>
+							<form action="#" method="post">
+								<ul class="nav nav-tabs" role="tablist">
+									<li class="nav-item" role="presentation">
+										<button class="nav-link active" id="mobile-tab" data-bs-toggle="tab" data-bs-target="#mobile-tab-pane" type="button" role="tab" aria-controls="mobile-tab-pane" aria-selected="true">Mobile</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" id="email-tab" data-bs-toggle="tab" data-bs-target="#email-tab-pane" type="button" role="tab" aria-controls="email-tab-pane" aria-selected="false">email</button>
+									</li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane fade show active" id="mobile-tab-pane" role="tabpanel" aria-labelledby="mobile-tab" tabindex="0">
+										<div class="form-group">
+											<input type="text" id="mobile_code" class="form-control" placeholder="Phone Number" name="name">
+										</div>
+									</div>
+									<div class="tab-pane fade" id="email-tab-pane" role="tabpanel" aria-labelledby="email-tab" tabindex="0">
+										<div class="form-group">
+											<input type="email" class="form-control" name="email" placeholder="Email ID">
+										</div>
+									</div>
+								</div>
+								<div class="modal__footer">
+									<p>By Continuing I agree to <a href="#">Terms and Conditions</a> & <a href="#">Privacy Policy</a></p>
+									<div class="modal__btns">
+										<button type="button" class="btn btn-outline" data-bs-dismiss="modal">Close</button>
+										<button type="submit" class="btn">Continue</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+	<script>
+		var input = document.querySelector('#qty');
+		var btnminus = document.querySelector('.qtyminus');
+		var btnplus = document.querySelector('.qtyplus');
+
+		if (input !== undefined && btnminus !== undefined && btnplus !== undefined && input !== null && btnminus !== null && btnplus !== null) {
+			
+			var min = Number(input.getAttribute('min'));
+			var max = Number(input.getAttribute('max'));
+			var step = Number(input.getAttribute('step'));
+
+			function qtyminus(e) {
+				var current = Number(input.value);
+				var newval = (current - step);
+				if(newval < min) {
+					newval = min;
+				} else if(newval > max) {
+					newval = max;
+				} 
+				input.value = Number(newval);
+				e.preventDefault();
+			}
+
+			function qtyplus(e) {
+				var current = Number(input.value);
+				var newval = (current + step);
+				if(newval > max) newval = max;
+				input.value = Number(newval);
+				e.preventDefault();
+			}
+				
+			btnminus.addEventListener('click', qtyminus);
+			btnplus.addEventListener('click', qtyplus);
+		
+		} // End if test
+    </script>
+</body>
+</html>
