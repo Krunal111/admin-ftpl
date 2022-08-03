@@ -1,8 +1,3 @@
-AOS.init({
-	duration: 1200,
-  disable: 'mobile'
-});
-
 // Header Fixed JS
 jQuery(document).ready(function()
 {
