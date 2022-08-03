@@ -1546,7 +1546,7 @@ header.fixed {
     font-size: 0.938rem;
     font-weight: 600;
 }
-.order__summary .order__summary__item {
+.shopping__checkout--block .order__summary .order__summary__item  {
     border-top: 1px solid #18A0FB;
     padding-top: 1.2rem;
     margin-top: 1.2rem;
