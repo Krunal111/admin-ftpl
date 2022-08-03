@@ -108,7 +108,7 @@
 											<div class="product__qty__wrapper d-flex">
 												<label for="">Ring Size</label>
 												<div class="product__qty">
-													<input type="number" name="qty" id="qty" min="1" max="10" step="1" value="1">
+													<input type="number" name="qty" class="qty-input" id="qty" min="1" max="10" step="1" value="1">
 													<button class="qtyminus" aria-hidden="true">&minus;</button>
 													<button class="qtyplus" aria-hidden="true">&plus;</button>
 												</div>
@@ -165,7 +165,7 @@
 											<div class="product__qty__wrapper d-flex">
 												<label for="">Ring Size</label>
 												<div class="product__qty">
-													<input type="number" name="qty" id="qty" min="1" max="10" step="1" value="1">
+													<input type="number" name="qty" class="qty-input" id="qty" min="1" max="10" step="1" value="1">
 													<button class="qtyminus" aria-hidden="true">&minus;</button>
 													<button class="qtyplus" aria-hidden="true">&plus;</button>
 												</div>
@@ -767,40 +767,32 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
     <script src="./assets/js/main.js"></script>
 	<script>
-		var input = document.querySelector('#qty');
-		var btnminus = document.querySelector('.qtyminus');
-		var btnplus = document.querySelector('.qtyplus');
-
-		if (input !== undefined && btnminus !== undefined && btnplus !== undefined && input !== null && btnminus !== null && btnplus !== null) {
-			
-			var min = Number(input.getAttribute('min'));
-			var max = Number(input.getAttribute('max'));
-			var step = Number(input.getAttribute('step'));
-
-			function qtyminus(e) {
-				var current = Number(input.value);
-				var newval = (current - step);
-				if(newval < min) {
-					newval = min;
-				} else if(newval > max) {
-					newval = max;
-				} 
-				input.value = Number(newval);
+		// Shopping Cart Numer Increament / Decreament JS Start
+		$(document).ready(function () {
+			$('.qtyplus').click(function (e) {
 				e.preventDefault();
-			}
+				var incre_value = $(this).parents('.product__qty').find('.qty-input').val();
+				var value = parseInt(incre_value, 10);
+				value = isNaN(value) ? 0 : value;
+				if(value<10){
+					value++;
+					$(this).parents('.product__qty').find('.qty-input').val(value);
+				}
 
-			function qtyplus(e) {
-				var current = Number(input.value);
-				var newval = (current + step);
-				if(newval > max) newval = max;
-				input.value = Number(newval);
+			});
+
+			$('.qtyminus').click(function (e) {
 				e.preventDefault();
-			}
-				
-			btnminus.addEventListener('click', qtyminus);
-			btnplus.addEventListener('click', qtyplus);
-		
-		} // End if test
+				var decre_value = $(this).parents('.product__qty').find('.qty-input').val();
+				var value = parseInt(decre_value, 10);
+				value = isNaN(value) ? 0 : value;
+				if(value>1){
+					value--;
+					$(this).parents('.product__qty').find('.qty-input').val(value);
+				}
+			});
+		});
+		// Shopping Cart Numer Increament / Decreament JS Start
     </script>
 </body>
 </html>

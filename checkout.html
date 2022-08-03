@@ -214,7 +214,29 @@
 										</div>
                                         <div class="product__qty">
                                             <button class="qtyminus" aria-hidden="true">&minus;</button>
-                                            <input type="number" name="qty" id="qty" min="1" max="10" step="1" value="1">
+                                            <input type="number" name="qty" class="qty-input" id="qty" min="1" max="10" step="1" value="1">
+                                            <button class="qtyplus" aria-hidden="true">&plus;</button>
+                                        </div>
+                                        <div class="product__price">
+											<h6 class="mb-0">€19,965</h3>
+										</div>
+                                    </div>
+                                </div>
+								<div class="order__review__item d-flex">
+                                    <div class="order__review__delete">✕</div>
+									<div class="order__review__img">
+										<div class="center--image">
+											<a href="#"><img src="./assets/images/products/product-img-2.png" alt="Product Image"></a>
+										</div>
+									</div>
+                                    <div class="order__review__details">
+                                        <div class="product__title mb-3">
+											<h5 class="small mb-1">The Darcia Chevron Ring</h5>
+											<p class="small mb-0">Product Code: 074793-25404252</p>
+										</div>
+                                        <div class="product__qty">
+                                            <button class="qtyminus" aria-hidden="true">&minus;</button>
+                                            <input type="number" name="qty" class="qty-input" id="qty" min="1" max="10" step="1" value="1">
                                             <button class="qtyplus" aria-hidden="true">&plus;</button>
                                         </div>
                                         <div class="product__price">
@@ -791,40 +813,32 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
     <script src="./assets/js/main.js"></script>
 	<script>
-		var input = document.querySelector('#qty');
-		var btnminus = document.querySelector('.qtyminus');
-		var btnplus = document.querySelector('.qtyplus');
-
-		if (input !== undefined && btnminus !== undefined && btnplus !== undefined && input !== null && btnminus !== null && btnplus !== null) {
-			
-			var min = Number(input.getAttribute('min'));
-			var max = Number(input.getAttribute('max'));
-			var step = Number(input.getAttribute('step'));
-
-			function qtyminus(e) {
-				var current = Number(input.value);
-				var newval = (current - step);
-				if(newval < min) {
-					newval = min;
-				} else if(newval > max) {
-					newval = max;
-				} 
-				input.value = Number(newval);
+		// Shopping Cart Numer Increament / Decreament JS Start
+		$(document).ready(function () {
+			$('.qtyplus').click(function (e) {
 				e.preventDefault();
-			}
+				var incre_value = $(this).parents('.product__qty').find('.qty-input').val();
+				var value = parseInt(incre_value, 10);
+				value = isNaN(value) ? 0 : value;
+				if(value<10){
+					value++;
+					$(this).parents('.product__qty').find('.qty-input').val(value);
+				}
 
-			function qtyplus(e) {
-				var current = Number(input.value);
-				var newval = (current + step);
-				if(newval > max) newval = max;
-				input.value = Number(newval);
+			});
+
+			$('.qtyminus').click(function (e) {
 				e.preventDefault();
-			}
-				
-			btnminus.addEventListener('click', qtyminus);
-			btnplus.addEventListener('click', qtyplus);
-		
-		} // End if test
+				var decre_value = $(this).parents('.product__qty').find('.qty-input').val();
+				var value = parseInt(decre_value, 10);
+				value = isNaN(value) ? 0 : value;
+				if(value>1){
+					value--;
+					$(this).parents('.product__qty').find('.qty-input').val(value);
+				}
+			});
+		});
+		// Shopping Cart Numer Increament / Decreament JS Start
     </script>
 </body>
 </html>
