@@ -922,6 +922,7 @@ header.fixed {
 }
 .products__browse h1 {
     font-size: 1.875rem;
+    color: #464646;
 }
 .product__sort label {
     font-weight: 700;
