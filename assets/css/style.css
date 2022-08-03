@@ -336,9 +336,6 @@ img {
 /* Header CSS Start */
 
 /* Header Top CSS Start */
-.header-logo {
-    mix-blend-mode: multiply;
-}
 .mobile__menu__main { display: none; }
 .inner__pages .header {
     background-color: var(--bggrey);
