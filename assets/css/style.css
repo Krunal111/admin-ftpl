@@ -652,6 +652,7 @@ header.fixed {
 .category__item {
     position: relative;
     margin-bottom: -3.75rem;
+    background-color: #E3E4E5;
 }
 .category__item .category__image {
     padding-top: 126%;
@@ -1013,18 +1014,6 @@ header.fixed {
 .product__large__item {
     padding-top: 75%;
 }
-.product__large__item:before {
-    content: "";
-    position: absolute;
-    top: 1.2rem;
-    right: 1.2rem;
-    width: 1.5rem;
-    height: 1.5rem;
-    background: url('../images/icons/search.svg') no-repeat center / contain;
-    pointer-events: none;
-    z-index: 1;
-}
-.product__large__item.product-video:before { display: none; }
 .product__large__item a {
     display: block;
 }
@@ -2108,7 +2097,7 @@ header.fixed {
         padding-top: 37.5%;
     }
     .category__item .category__image img {
-        object-position: center 70%;
+        object-position: center 60%;
     }
     .category__item .category__name {
         padding: 0.938rem;
