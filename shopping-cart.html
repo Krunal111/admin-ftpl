@@ -106,7 +106,7 @@
 												</select>
 											</div>
 											<div class="product__qty__wrapper d-flex">
-												<label for="">Ring Size</label>
+												<label for="">Quantity</label>
 												<div class="product__qty">
 													<input type="number" name="qty" class="qty-input" id="qty" min="1" max="10" step="1" value="1">
 													<button class="qtyminus" aria-hidden="true">&minus;</button>
@@ -163,7 +163,7 @@
 												</select>
 											</div>
 											<div class="product__qty__wrapper d-flex">
-												<label for="">Ring Size</label>
+												<label for="">Quantity</label>
 												<div class="product__qty">
 													<input type="number" name="qty" class="qty-input" id="qty" min="1" max="10" step="1" value="1">
 													<button class="qtyminus" aria-hidden="true">&minus;</button>
@@ -716,7 +716,7 @@
 	</footer>
 
 	<!-- Modal -->
-	<div class="login__modal modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="login__modal modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
 				<div class="modal-body p-0">
@@ -794,5 +794,13 @@
 		});
 		// Shopping Cart Numer Increament / Decreament JS Start
     </script>
+
+	<script>
+		// -----Country Code Selection
+		$("#mobile_code").intlTelInput({
+			initialCountry: "it",
+			separateDialCode: true,
+		});
+	</script>
 </body>
 </html>

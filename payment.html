@@ -455,7 +455,7 @@
 	</footer>
 
 	<!-- Modal -->
-	<div class="login__modal modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="login__modal modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
 				<div class="modal-body p-0">
@@ -533,5 +533,13 @@
 		});
 		// Shopping Cart Numer Increament / Decreament JS Start
     </script>
+
+	<script>
+		// -----Country Code Selection
+		$("#mobile_code").intlTelInput({
+			initialCountry: "it",
+			separateDialCode: true,
+		});
+	</script>
 </body>
 </html>

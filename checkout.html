@@ -103,12 +103,14 @@
                                                 <label for="">State/Province</label>
                                                 <select name="state" class="form-control form-select">
                                                     <option value="0">Lombardy</option>
+													<option value="0">Lombardy 1</option>
                                                 </select>
                                             </div>
                                             <div class="form-group col-lg-6 col-md-6">
                                                 <label for="">City</label>
                                                 <select name="city" class="form-control form-select">
                                                     <option value="0">Milan</option>
+													<option value="0">Milan 1</option>
                                                 </select>
                                             </div>
                                             <div class="form-group col-lg-6 col-md-6">
@@ -762,7 +764,7 @@
 	</footer>
 
 	<!-- Modal -->
-	<div class="login__modal modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="login__modal modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
 				<div class="modal-body p-0">
@@ -824,7 +826,6 @@
 					value++;
 					$(this).parents('.product__qty').find('.qty-input').val(value);
 				}
-
 			});
 
 			$('.qtyminus').click(function (e) {
@@ -840,5 +841,13 @@
 		});
 		// Shopping Cart Numer Increament / Decreament JS Start
     </script>
+
+	<script>
+		// -----Country Code Selection
+		$("#mobile_code").intlTelInput({
+			initialCountry: "it",
+			separateDialCode: true,
+		});
+	</script>
 </body>
 </html>

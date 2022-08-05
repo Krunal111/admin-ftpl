@@ -803,15 +803,19 @@ header.fixed {
     -o-transition: all 0.6s ease-in-out;
     transition: all 0.6s ease-in-out;
 }
+.rings__slider .ringe__single__col {
+    height: auto;
+}
 .ring_product__item.ringe__single {
     padding: 0;
     border-bottom: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100% - 1.875rem);
 }
 .ring_product__item .ring_product__img {
     padding-top: 60%;
-}
-.ring_product__item.ringe__single .ring_product__img {
-    padding-top: 99.96%;
 }
 .ring_product__item .ring_product__des {
     margin-top: 0.938rem;
@@ -1871,12 +1875,6 @@ header.fixed {
     }
     /* Offer Block CSS End */
 
-    /* Rings Block CSS Start */
-    .ring_product__item.ringe__single .ring_product__img {
-        padding-top: 110%;
-    }
-    /* Rings Block CSS End */
-
     /* Product Details Page CSS Start */
     .single__product, .single__product__description {
         margin-right: 0;
@@ -1908,12 +1906,6 @@ header.fixed {
         padding: 0.714rem 2.143rem;
     }
     /* Modal CSS End */
-
-    /* Rings Block CSS Start */
-    .ring_product__item.ringe__single .ring_product__img {
-        padding-top: 104%;
-    }
-    /* Rings Block CSS End */
 
     /* Category Page CSS Start */
     .offfer__item.category-offer .offfer__cta {
@@ -2138,19 +2130,14 @@ header.fixed {
         position: relative;
         margin-bottom: 0;
     }
+    .ring_product__item {
+        margin-bottom: 1rem;
+    }
+    .ring_product__item.ringe__single {
+        height: calc(100% - 1rem);
+    }
     .ring_product__item .ring_product__img {
         padding-top: 70%;
-    }
-    .ringe__single__col,
-    .ring_product__item.ringe__single {
-        height: 100% !important;
-    }
-    .ring_product__item.ringe__single .ring_product__img {
-        padding-top: 0;
-        height: 100%;
-    }
-    .ring_product__item.ringe__single .ring_product__img img {
-        position: static;
     }
     .ring_product__des h6, .ring_product__des p {
         font-size: 1rem;
@@ -2444,6 +2431,15 @@ header.fixed {
         margin-top: 1.1rem;
     }
     /* Shopping Cart Page CSS End */
+
+    /* Shopping Checkout Page CSS Start */
+    .order__review__item .order__review__details {
+        padding-bottom: 2rem;
+    }
+    .order__review__item .order__review__details .product__title {
+        width: 85%;
+    }
+    /* Shopping Checkout Page CSS End */
 
     /* Payment Page CSS Start */
     .payment__method__head {
