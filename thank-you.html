@@ -312,7 +312,7 @@
 	</footer>
 
 	<!-- Modal -->
-	<div class="login__modal modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="login__modal modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
 				<div class="modal-body p-0">
@@ -362,5 +362,12 @@
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
     <script src="./assets/js/main.js"></script>
+	<script>
+		// -----Country Code Selection
+		$("#mobile_code").intlTelInput({
+			initialCountry: "it",
+			separateDialCode: true,
+		});
+	</script>
 </body>
 </html>

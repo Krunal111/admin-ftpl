@@ -364,6 +364,7 @@ img {
 .login__links li svg path {
     fill: #323231;
     opacity: 1;
+    fill-opacity: 0.69;
 }
 
 header {
