@@ -1019,6 +1019,10 @@ header.fixed {
 .product__large__item {
     padding-top: 75%;
 }
+.product__large__item video,
+.product__large__item iframe {
+    object-fit: contain;
+}
 .product__large__item a {
     display: block;
 }
