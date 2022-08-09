@@ -1373,6 +1373,16 @@ header.fixed {
     background-color: transparent;
     font-weight: 700;
 }
+.product__qty input[type=number]::-webkit-inner-spin-button, 
+.product__qty input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+.product__qty input[type=number] {
+    -moz-appearance: textfield;
+}
 .shopping__cart__item .product__filter select {
     border-radius: 0;
     display: inline-block;
