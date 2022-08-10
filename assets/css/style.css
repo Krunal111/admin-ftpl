@@ -1368,6 +1368,9 @@ header.fixed {
     padding: 0.313rem 0.6rem;
     font-weight: 700;
 }
+.product__qty {
+    padding: 0.313rem 0.4rem 0.313rem 0.2rem;
+}
 .product__qty__wrapper {
     align-items: center;
 }
@@ -1376,6 +1379,7 @@ header.fixed {
     border: none;
     background-color: transparent;
     font-weight: 700;
+    padding: 0 2px;
 }
 .product__qty input[type=number]::-webkit-inner-spin-button, 
 .product__qty input[type=number]::-webkit-outer-spin-button { 
@@ -1395,6 +1399,7 @@ header.fixed {
 .product__qty input {
     width: 2.5rem;
     text-align: center;
+    font-size: 1rem;
 }
 .shopping__cart__item .product__info {
     margin-top: 1rem;
