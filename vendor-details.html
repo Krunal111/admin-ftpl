@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FTPL | Vendot Details</title>
+	<link rel="shortcut icon" sizes="64x64" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<!-- jQuery UI CSS -->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link href="./assets/css/style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <header class="topheader">
+		<div class="container-fluid">
+		   	<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+				<div class="logo">
+					<a href="/dashboard"><img src="./assets/images/ftpl-logo.svg" alt="mdo" width="80" height="44"></a>
+				</div>
+				<div class="header__menu col-lg-auto me-lg-auto mb-2 mb-md-0">
+					<ul class="nav col-12 justify-content-center">
+					  <div class="topnav">
+						  <li class="nav-item">
+							  <a class="nav-link dashLink" href="#" aria-current="page">Dashboard </a>
+						  </li>
+					  </div>
+					   <div class="topnav">
+						  <li class="nav-item dropdown">
+								 <a class="nav-link dropdown-toggle active-nav-item" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false">Contract </a>
+							  <ul class="dropdown-menu link-text" aria-labelledby="dropdown03">
+								  <li class="dropdown-item"><a href="/contracttemplatesearch">
+									  Contract Templates* </a></li>
+								  <li class="dropdown-item"><a href="/contreqt">Contracts* </a></li>
+								  <li class="dropdown-item"><a href="/vendorcontract">Vendor Contracts*</a></li>
+								  <li class="dropdown-item ">
+									  <a href="/ocr">OCR POC*</a>
+								  </li>
+							  </ul>
+						  </li>
+					   </div>
+					   <div class="topnav">
+						  <li class="nav-item dropdown "><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false">Event Calendar </a></li>
+					   </div>
+					   <div class="topnav">
+						  <li class="nav-item dropdown" id="admin">
+								 <a class="nav-link dropdown-toggle " href="#" data-bs-toggle="dropdown" role="button" data-bs-auto-close="outside" aria-expanded="false">Admin </a>
+								 <ul class="dropdown-menu" aria-labelledby="dropdown03">
+									<li class="dropend">
+									   <a class="nav-link dropdown-toggle active-sub-nav-item:focus" data-bs-toggle="dropdown" role="button" href="#" aria-expanded="false">Company Setup</a>
+									  <ul class="d-none">
+										  <li class="dropdown-item"><a href="/country">
+										  Country</a></li>
+										  <li class="dropdown-item"><a href="/state">State</a></li>
+										  <li class="dropdown-item"><a href="/city">City</a></li>
+										  <li class="dropdown-item"><a href="/branch">Branch/ Offices</a></li>
+										  <li class="dropdown-item"><a href="/department">Department</a></li>
+										  <li class="dropdown-item"><a href="/users">Employee</a></li>
+										  <li class="dropdown-item"><a href="/vendor">Vendor</a></li>
+										  <li class="dropdown-item"><a href="/generalcodes">General Codes</a></li>
+									  </ul>
+									</li>
+								  <li class="dropend">
+									  <a class="nav-link dropdown-toggle active-sub-nav-item:focus" data-bs-toggle="dropdown" role="button" href="#">Contract Masters</a>
+									  <ul class="d-none">
+										  <li class="dropdown-item"><a href="/businessunit">Business Unit</a></li>
+										  <li class="dropdown-item"><a href="/costcenter">Cost Center</a></li>
+										  <li class="dropdown-item"><a href="/contractcategory">Contract Category</a></li>
+										  <li class="dropdown-item"><a href="/service">Services</a></li>
+										  <li class="dropdown-item"><a href="/uom">UOM  </a></li>
+										  <li class="dropdown-item"><a href="/hsncode">HSN Code</a></li>
+										  <li class="dropdown-item"><a href="/item">Items</a></li>
+										  <li class="dropdown-item"><a href="/expensecategory">Expense Category</a></li>
+										  <li class="dropdown-item"><a href="/clientproduct">Client Product</a></li>
+										  <li class="dropdown-item"><a href="/paymentterm">Payment Terms</a></li>
+										  <li class="dropdown-item"><a href="/potype">PO Types</a></li>
+										  <li class="dropdown-item"><a href="/client">Client</a></li>
+										  <li class="dropdown-item"><a href="/ticketclassification">Ticket Classification</a></li>
+									  </ul>
+								  </li>
+								  <li class="dropend">
+									  <a class="nav-link dropdown-toggle active-sub-nav-item:focus" data-bs-toggle="dropdown" role="button" href="#">Security</a>
+									  <ul class="dropdown-menu shadow">
+										  <li class="dropdown-item">	<a href="/menupermission">Menu Permission</a></li>
+										  <li class="dropdown-item">	<a href="/screenpermission">Screen Permission</a></li>
+										  <li class="dropdown-item">	<a href="/assignrolestouser">Assign Roles To User</a></li>
+										  <li class="dropdown-item">	<a href="/userrole">User Role</a></li>
+									  </ul>
+								  </li>
+							  </ul>
+						  </li>
+					   </div>
+					   <div class="topnav">
+						  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" data-bs-auto-close="outside">KPIs </a></li>
+					   </div>
+					   <div class="topnav">
+						  <li class="nav-item "><a class="nav-link" href="#" aria-current="page">Support Ticket </a></li>
+					   </div>
+					   <div class="topnav">
+						  <li class="nav-item dropdown ">
+								 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false">Survey </a>
+								 <ul class="dropdown-menu link-text" aria-labelledby="dropdown03">
+								   <li class="dropdown-item"> <a href="/createsurvey">Create Survey*</a></li>
+								 </ul>
+						  </li>
+					   </div>
+					</ul>
+				</div>
+				<div class="mobile__toggle">
+					<img class="in__svg" src="./assets/images/3dots.svg" alt="Mobile Menu">
+				</div>
+				<div class="header__notification">
+					<a class="notification__btn" href="#" data-bs-toggle="dropdown" aria-expanded="false"> <span class="notification__chat"><img class="in__svg" src="./assets/images/chat.svg" alt="Chat"> Messages</span><img class="in__svg" src="./assets/images/bell.svg" alt="Bell"></a>
+					<ul class="dropdown-menu text-small">
+						<li class="dropdown-item"><a class="link-text" href="/myaccount">No Messages</a></li>
+					</ul>
+				</div>
+				<div class="header__user d-flex align-items-center">
+					<div class="user__name fw-bold me-3">Welcome Anil</div>
+					<div class="dropdown text-end">
+						<a href="#" class="d-block link-dark text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false"><img src="./assets/images/user.png" alt="mdo" width="32" height="32" class="rounded-circle"></a>
+						<ul class="dropdown-menu text-small">
+							<li class="dropdown-item"><a class="link-text" href="/myaccount">My Account</a></li>
+							<li class="dropdown-item"><a class="link-text" href="/">Sign out</a></li>
+						</ul>
+					</div>
+				</div>
+		   	</div>
+		</div>
+	</header>
+	<div class="layout-wrapper">
+		<div class="sidebar collapsed">
+			<div class="sidebar-items">
+				<div class="sidebar-header">
+					<img src="./assets/images/sidebar/sidebar_toggle.svg" class="sidebarArrow" alt="img">
+				</div>
+				<div class="items">
+					<a href="#">
+						<img src="./assets/images/sidebar/sidebar-icon-1.svg" alt="" class="sidebar-icon in__svg"><span class="sidebar-text">MASTER FIELDS</span>
+					</a>
+				</div>
+				<div class="items active dropdown">
+					<a data-bs-toggle="collapse" href="#vendor-details" aria-expanded="false" aria-controls="vendor-details">
+						<img src="./assets/images/sidebar/sidebar-icon-2.svg" alt="" class="sidebar-icon in__svg"><span class="sidebar-text">vendor Details</span>
+					</a>
+					<ul class="sidebar__submenu list-unstyled collapse" id="vendor-details">
+						<li><a class="submenu-item" href="vendor-subsidaries-list.html">Subsidaries</a></li>
+						<li><a class="submenu-item" href="vendor-authorized-signatories-list.html">Authorized Signatories</a></li>
+						<li><a class="submenu-item" href="vendor-references-list.html">References</a></li>
+						<li><a class="submenu-item" href="vendor-attachments-list.html">Attachments</a></li>
+						<li><a class="submenu-item" href="vendor-product-list.html">Product</a></li>
+						<li>
+							<a class="submenu-item" href="vendor-location-list.html">Location</a>
+							<span class="ms-2" data-bs-toggle="collapse" href="#location" aria-expanded="false" aria-controls="location"><img src="./assets/images/down-arrow.svg" alt="Down Arrow"></span>
+							<ul class="sidebar__submenu__child list-unstyled collapse" id="location">
+								<li><a class="submenu-item" href="vendor-location-contact-list.html">Location Contact</a></li>
+							</ul>
+						</li>
+						<li><a class="submenu-item" href="./vendor-direcotrs-list.html">Direcotrs</a></li>
+					</ul>
+				</div>
+				<div class="items">
+					<a href="#">
+						<img src="./assets/images/sidebar/sidebar-icon-3.svg" alt="" disabled="" class="sidebar-icon in__svg"><span class="sidebar-text">USER ACCESS</span>
+					</a>
+				</div>
+				<div class="items">
+					<a href="#">
+						<img src="./assets/images/sidebar/sidebar-icon-4.svg" alt="" class="sidebar-icon in__svg"><span class="sidebar-text">ATTACHMENTS</span>
+					</a>
+				</div>
+				<div class="items">
+					<a href="#">
+						<img src="./assets/images/sidebar/sidebar-icon-5.svg" alt="" class="sidebar-icon in__svg"><span class="sidebar-text">MESSAGES</span>
+					</a>
+				</div>
+				<div class="items">
+					<a href="#">
+						<img src="./assets/images/sidebar/sidebar-icon-6.svg" alt="" class="sidebar-icon in__svg"><span class="sidebar-text">KPIs</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="main-content">
+			<div class="content__wrapper">
+				<div class="container-fluid">
+					<div class="page-title-box mb-4 mb-md-5">
+						<h1 class="page-title fw-bold h5 mb-0">Xyz Vendor Details</h1>
+					</div>
+					<div class="form-field-wrapper">
+						<form action="#" method="post">
+							<div class="form-field-item">
+								<h4 class="h5 mb-3">Basic Information</h4>
+								<div class="row">
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Vendor ID* </label>
+										<input type="text" name="vendor_id" class="form-control" placeholder="FTPL_1017">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Vendor Name</label>
+										<input type="text" name="vendor_name" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>PAN*</label>
+										<input type="text" name="pan" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>TAN</label>
+										<input type="text" name="pan" class="datepicker form-control" placeholder="dd/mm/yyyy">
+									</div>
+									<div class="form-group warning col-lg-3 col-md-4 col-sm-6">
+										<label>GST Number*</label>
+										<input type="text" name="gst_no" class="form-control" placeholder="00000 00000">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Aadhar card*</label>
+										<input type="text" name="adhar_card" class="form-control" placeholder="00000 00000">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>On boarding date</label>
+										<input type="text" name="boarding_date" class="datepicker form-control" placeholder="00000 00000">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Office timings</label>
+										<input type="text" name="office_timings" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Area of Operation</label>
+										<input type="text" name="aoo" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Total temp</label>
+										<input type="text" name="temp" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Total Technical Staff</label>
+										<input type="text" name="staff" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Total Service Centers</label>
+										<input type="text" name="owner" class="form-control" placeholder="Owner">
+									</div>
+								</div>
+							</div>
+							<div class="form-field-item">
+								<h4 class="h5 mb-3">Corporate Information:</h4>
+								<div class="row">
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Tax details</label>
+										<input type="text" name="tax" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Graudity</label>
+										<input type="text" name="graudity" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>PF* </label>
+										<input type="text" name="pf" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>PF Code*</label>
+										<input type="text" name="pf_code" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Labour Reg. No</label>
+										<input type="text" name="labour_no" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Trade License details*</label>
+										<input type="text" name="license" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Equal renumeration act, Emp</label>
+										<input type="text" name="renumeration" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>State Insurance details*</label>
+										<input type="text" name="insurance" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Prof Tax details</label>
+										<input type="text" name="prof_tax" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Bonus</label>
+										<input type="text" name="bonus" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Child labor laws</label>
+										<input type="text" name="child_labor_laws" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Company labor laws</label>
+										<input type="text" name="company_labor_laws" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Occup Heaht laws</label>
+										<input type="text" name="heath_laws" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Legal Cases</label>
+										<input type="text" name="legal_case" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Is blacklisted</label>
+										<input type="text" name="blacklisted" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Blacklisted Reason</label>
+										<input type="text" name="blacklisted_reason" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Is AML clear</label>
+										<input type="text" name="aml_clear" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>AML Details</label>
+										<input type="text" name="aml_details" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Group Insurance details</label>
+										<input type="text" name="insurance_details" class="form-control" placeholder="Free text">
+									</div>
+								</div>
+							</div>
+							<div class="form-field-item">
+								<h4 class="h5 mb-3">Head Office location details</h4>
+								<div class="row">
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Reg. address</label>
+										<input type="text" name="reg_address" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Corp. address</label>
+										<input type="text" name="corp_address" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>City*</label>
+										<div class="input-group">
+											<input type="text" name="city" class="form-control" placeholder="Search">
+											<span class="input-group-dots">
+												<a href="#" data-bs-toggle="modal" data-bs-target="#add_modal">
+													<img src="./assets/images/3dots.svg" alt="Dots">
+												</a>
+											</span>
+										</div>
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Pin*</label>
+										<div class="input-group">
+											<input type="text" name="pin" class="form-control" placeholder="Search">
+											<span class="input-group-dots">
+												<a href="#" data-bs-toggle="modal" data-bs-target="#add_modal">
+													<img src="./assets/images/3dots.svg" alt="Dots">
+												</a>
+											</span>
+										</div>
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Country*</label>
+										<div class="input-group">
+											<input type="text" name="country" class="form-control" placeholder="Search">
+											<span class="input-group-dots">
+												<a href="#" data-bs-toggle="modal" data-bs-target="#add_modal">
+													<img src="./assets/images/3dots.svg" alt="Dots">
+												</a>
+											</span>
+										</div>
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>state*</label>
+										<div class="input-group">
+											<input type="text" name="State" class="form-control" placeholder="Search">
+											<span class="input-group-dots">
+												<a href="#" data-bs-toggle="modal" data-bs-target="#add_modal">
+													<img src="./assets/images/3dots.svg" alt="Dots">
+												</a>
+											</span>
+										</div>
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>HO location</label>
+										<input type="text" name="ho_location" class="form-control" placeholder="Free text">
+									</div>
+								</div>
+							</div>
+							<div class="form-field-item">
+								<h4 class="h5 mb-3">Bank Details*</h4>
+								<div class="row">
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Bank Name*</label>
+										<input type="text" name="bank_name" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Bank Branch*</label>
+										<input type="text" name="bank_branch" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>IFSC Code*</label>
+										<input type="text" name="IFS_code" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Acc type*</label>
+										<input type="text" name="acc_type" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Account number*</label>
+										<input type="text" name="acc_no" class="form-control" placeholder="Free text">
+									</div>
+								</div>
+							</div>
+							<div class="form-field-item">
+								<h4 class="h5 mb-3">Other Details</h4>
+								<div class="row">
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Created by</label>
+										<input type="text" name="created_by" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Date of creation</label>
+										<input type="text" name="date_creation" class="datepicker form-control" placeholder="dd/mm/yyyy">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>last updated by</label>
+										<input type="text" name="last_updated_by" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Authorized by</label>
+										<input type="text" name="authorized_by" class="form-control" placeholder="Free text">
+									</div>
+									<div class="form-group col-lg-3 col-md-4 col-sm-6">
+										<label>Date of Authorization</label>
+										<input type="text" name="date_authorization" class="datepicker form-control" placeholder="dd/mm/yyyy">
+									</div>
+								</div>
+							</div>
+							<div class="form__action text-end">
+								<button type="reset" class="btn btn-secondary">Cancel</button>
+								<button type="submit" class="btn btn-primary">Save</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="container-fluid">
+					<p class="mb-0 text-center">All rights reserved © FTPL</p>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<!-- Add Modal -->
+	<div class="modal fade" id="add_modal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header text-white">
+					<h5 class="modal-title" id="exampleModalLabel">Add Verifier</h5>
+					<button type="button" class="btn-close btnClose btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body bg-light">
+					<div class="row">
+					   	<div class="mb-3">
+						  	<div class="search mb-2">
+								<input type="search" class="form-control" placeholder="Search" name="searchkey" id="validationCustom03" value="">
+								<img src="./assets/images/search-icon.svg" alt="Search" class="img-fluid logo-image" data-bs-toggle="modal" data-bs-target="#searchAlert">
+							</div>
+						  	<div class="table-responsive">
+								<table class="table tableData table-striped">
+									<thead class="tableHeader">
+										<tr>
+											<th scope="col">User Name</th>
+											<th scope="col">Select</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="tableBorder">ADMIN ADMIN</td>
+											<td class="tableBorder"><button type="button" class="btn btnSave2 m-1" data-bs-dismiss="modal">Select</button></td>
+										</tr>
+										<tr>
+											<td class="tableBorder">admin1 </td>
+											<td class="tableBorder"><button type="button" class="btn btnSave2 m-1" data-bs-dismiss="modal">Select</button></td>
+										</tr>
+										<tr>
+											<td class="tableBorder">admin2 </td>
+											<td class="tableBorder"><button type="button" class="btn btnSave2 m-1" data-bs-dismiss="modal">Select</button></td>
+										</tr>
+										<tr>
+											<td class="tableBorder">ADMIN null</td>
+											<td class="tableBorder"><button type="button" class="btn btnSave2 m-1" data-bs-dismiss="modal">Select</button></td>
+										</tr>
+										<tr>
+											<td class="tableBorder">ADMIN 45</td>
+											<td class="tableBorder"><button type="button" class="btn btnSave2 m-1" data-bs-dismiss="modal">Select</button></td>
+										</tr>
+										<tr>
+											<td class="tableBorder">admin null</td>
+											<td class="tableBorder"><button type="button" class="btn btnSave2 m-1" data-bs-dismiss="modal">Select</button></td>
+										</tr>
+										<tr>
+											<td class="tableBorder">Anil Gorule</td>
+											<td class="tableBorder"><button type="button" class="btn btnSave2 m-1" data-bs-dismiss="modal">Select</button></td>
+										</tr>
+										<tr>
+											<td class="tableBorder">Ajay J</td>
+											<td class="tableBorder"><button type="button" class="btn btnSave2 m-1" data-bs-dismiss="modal">Select</button></td>
+										</tr>
+										<tr>
+											<td class="tableBorder">CHECKER4 C</td>
+											<td class="tableBorder"><button type="button" class="btn btnSave2 m-1" data-bs-dismiss="modal">Select</button></td>
+										</tr>
+										<tr>
+											<td class="tableBorder">CHECKER3 C</td>
+											<td class="tableBorder"><button type="button" class="btn btnSave2 m-1" data-bs-dismiss="modal">Select</button></td>
+										</tr>
+										<tr>
+											<td class="tableBorder">Abhi Approver</td>
+											<td class="tableBorder"><button type="button" class="btn btnSave2 m-1" data-bs-dismiss="modal">Select</button></td>
+										</tr>
+										<tr>
+											<td class="tableBorder">Abhishek null</td>
+											<td class="tableBorder"><button type="button" class="btn btnSave2 m-1" data-bs-dismiss="modal">Select</button></td>
+										</tr>
+										<tr>
+											<td class="tableBorder">ASWIN VENDOR</td>
+											<td class="tableBorder"><button type="button" class="btn btnSave2 m-1" data-bs-dismiss="modal">Select</button></td>
+										</tr>
+										<tr>
+											<td class="tableBorder">Anil contapprover</td>
+											<td class="tableBorder"><button type="button" class="btn btnSave2 m-1" data-bs-dismiss="modal">Select</button></td>
+										</tr>
+										<tr>
+											<td class="tableBorder">Smith J</td>
+											<td class="tableBorder"><button type="button" class="btn btnSave2 m-1" data-bs-dismiss="modal">Select</button></td>
+										</tr>
+										<tr>
+											<td class="tableBorder">James J</td>
+											<td class="tableBorder"><button type="button" class="btn btnSave2 m-1" data-bs-dismiss="modal">Select</button></td>
+										</tr>
+										<tr>
+											<td class="tableBorder">Sanket contcreator</td>
+											<td class="tableBorder"><button type="button" class="btn btnSave2 m-1" data-bs-dismiss="modal">Select</button></td>
+										</tr>
+										<tr>
+											<td class="tableBorder">CHECKER1 C</td>
+											<td class="tableBorder"><button type="button" class="btn btnSave2 m-1" data-bs-dismiss="modal">Select</button></td>
+										</tr>
+										<tr>
+											<td class="tableBorder">CHECKER2 C</td>
+											<td class="tableBorder"><button type="button" class="btn btnSave2 m-1" data-bs-dismiss="modal">Select</button></td>
+										</tr>
+										<tr>
+											<td class="tableBorder">Kirti k</td>
+											<td class="tableBorder"><button type="button" class="btn btnSave2 m-1" data-bs-dismiss="modal">Select</button></td>
+										</tr>
+										<tr>
+											<td class="tableBorder">Khushi K</td>
+											<td class="tableBorder"><button type="button" class="btn btnSave2 m-1" data-bs-dismiss="modal">Select</button></td>
+										</tr>
+										<tr>
+											<td class="tableBorder">Abhi Shrivastav</td>
+											<td class="tableBorder"><button type="button" class="btn btnSave2 m-1" data-bs-dismiss="modal">Select</button></td>
+										</tr>
+										<tr>
+											<td class="tableBorder">test k</td>
+											<td class="tableBorder"><button type="button" class="btn btnSave2 m-1" data-bs-dismiss="modal">Select</button></td>
+										</tr>
+										<tr>
+											<td class="tableBorder">AKshta Bhanushali</td>
+											<td class="tableBorder"><button type="button" class="btn btnSave2 m-1" data-bs-dismiss="modal">Select</button></td>
+										</tr>
+										<tr>
+											<td class="tableBorder">Manoj Rao</td>
+											<td class="tableBorder"><button type="button" class="btn btnSave2 m-1" data-bs-dismiss="modal">Select</button></td>
+										</tr>
+									</tbody>
+								</table>
+						  	</div>
+					   	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- jQueru UI JS -->
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="./assets/js/main.js"></script>
+	<script>
+        // Date Picker
+        $(function() {
+            $(".datepicker").datepicker();
+        });
+    </script>
+</body>
+</html>
