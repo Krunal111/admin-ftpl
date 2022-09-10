@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FTPL | Survey Creater</title>
+	<link rel="shortcut icon" sizes="64x64" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- jQuery UI CSS -->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <!-- Timepicker CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+    <link href="./assets/css/style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <header class="topheader">
+		<div class="container-fluid">
+		   	<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+				<div class="logo">
+					<a href="/dashboard"><img src="./assets/images/ftpl-logo.svg" alt="mdo" width="80" height="44"></a>
+				</div>
+				<div class="header__menu col-lg-auto me-lg-auto mb-2 mb-md-0">
+					<ul class="nav col-12 justify-content-center">
+					  <div class="topnav">
+						  <li class="nav-item">
+							  <a class="nav-link dashLink" href="#" aria-current="page">Dashboard </a>
+						  </li>
+					  </div>
+					   <div class="topnav">
+						  <li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false">Contract </a>
+							    <ul class="dropdown-menu link-text" aria-labelledby="dropdown03">
+								  <li class="dropdown-item"><a href="/contracttemplatesearch">
+									  Contract Templates* </a></li>
+								  <li class="dropdown-item"><a href="/contreqt">Contracts* </a></li>
+								  <li class="dropdown-item"><a href="/vendorcontract">Vendor Contracts*</a></li>
+								  <li class="dropdown-item ">
+									  <a href="/ocr">OCR POC*</a>
+								  </li>
+							  </ul>
+						  </li>
+					   </div>
+					   <div class="topnav">
+						  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false">Event Calendar </a></li>
+					   </div>
+					   <div class="topnav">
+						  <li class="nav-item dropdown" id="admin">
+								 <a class="nav-link dropdown-toggle " href="#" data-bs-toggle="dropdown" role="button" data-bs-auto-close="outside" aria-expanded="false">Admin </a>
+								 <ul class="dropdown-menu" aria-labelledby="dropdown03">
+									<li class="dropend">
+									   <a class="nav-link dropdown-toggle active-sub-nav-item:focus" data-bs-toggle="dropdown" role="button" href="#" aria-expanded="false">Company Setup</a>
+									  <ul class="d-none">
+										  <li class="dropdown-item"><a href="/country">
+										  Country</a></li>
+										  <li class="dropdown-item"><a href="/state">State</a></li>
+										  <li class="dropdown-item"><a href="/city">City</a></li>
+										  <li class="dropdown-item"><a href="/branch">Branch/ Offices</a></li>
+										  <li class="dropdown-item"><a href="/department">Department</a></li>
+										  <li class="dropdown-item"><a href="/users">Employee</a></li>
+										  <li class="dropdown-item"><a href="/vendor">Vendor</a></li>
+										  <li class="dropdown-item"><a href="/generalcodes">General Codes</a></li>
+									  </ul>
+									</li>
+								  <li class="dropend">
+									  <a class="nav-link dropdown-toggle active-sub-nav-item:focus" data-bs-toggle="dropdown" role="button" href="#">Contract Masters</a>
+									  <ul class="d-none">
+										  <li class="dropdown-item"><a href="/businessunit">Business Unit</a></li>
+										  <li class="dropdown-item"><a href="/costcenter">Cost Center</a></li>
+										  <li class="dropdown-item"><a href="/contractcategory">Contract Category</a></li>
+										  <li class="dropdown-item"><a href="/service">Services</a></li>
+										  <li class="dropdown-item"><a href="/uom">UOM  </a></li>
+										  <li class="dropdown-item"><a href="/hsncode">HSN Code</a></li>
+										  <li class="dropdown-item"><a href="/item">Items</a></li>
+										  <li class="dropdown-item"><a href="/expensecategory">Expense Category</a></li>
+										  <li class="dropdown-item"><a href="/clientproduct">Client Product</a></li>
+										  <li class="dropdown-item"><a href="/paymentterm">Payment Terms</a></li>
+										  <li class="dropdown-item"><a href="/potype">PO Types</a></li>
+										  <li class="dropdown-item"><a href="/client">Client</a></li>
+										  <li class="dropdown-item"><a href="/ticketclassification">Ticket Classification</a></li>
+									  </ul>
+								  </li>
+								  <li class="dropend">
+									  <a class="nav-link dropdown-toggle active-sub-nav-item:focus" data-bs-toggle="dropdown" role="button" href="#">Security</a>
+									  <ul class="dropdown-menu shadow">
+										  <li class="dropdown-item"><a href="/menupermission">Menu Permission</a></li>
+										  <li class="dropdown-item"><a href="/screenpermission">Screen Permission</a></li>
+										  <li class="dropdown-item"><a href="/assignrolestouser">Assign Roles To User</a></li>
+										  <li class="dropdown-item"><a href="/userrole">User Role</a></li>
+									  </ul>
+								  </li>
+							  </ul>
+						  </li>
+					   </div>
+					   <div class="topnav">
+						  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" data-bs-auto-close="outside">KPIs </a></li>
+					   </div>
+					   <div class="topnav">
+						  <li class="nav-item "><a class="nav-link" href="#" aria-current="page">Support Ticket </a></li>
+					   </div>
+					   <div class="topnav">
+						  <li class="nav-item dropdown ">
+								 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false">Survey </a>
+								 <ul class="dropdown-menu link-text" aria-labelledby="dropdown03">
+								   <li class="dropdown-item"> <a href="/createsurvey">Create Survey*</a></li>
+								 </ul>
+						  </li>
+					   </div>
+					</ul>
+				</div>
+				<div class="mobile__toggle">
+					<img class="in__svg" src="./assets/images/3dots.svg" alt="Mobile Menu">
+				</div>
+				<div class="header__notification">
+					<a class="notification__btn" href="#" data-bs-toggle="dropdown" aria-expanded="false"> <span class="notification__chat"><img class="in__svg" src="./assets/images/chat.svg" alt="Chat"> Messages</span><img class="in__svg" src="./assets/images/bell.svg" alt="Bell"></a>
+					<ul class="dropdown-menu text-small">
+						<li class="dropdown-item"><a class="link-text" href="/myaccount">No Messages</a></li>
+					</ul>
+				</div>
+				<div class="header__user d-flex align-items-center">
+					<div class="user__name fw-bold me-3">Welcome Anil</div>
+					<div class="dropdown text-end">
+						<a href="#" class="d-block link-dark text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false"><img src="./assets/images/user.png" alt="mdo" width="32" height="32" class="rounded-circle"></a>
+						<ul class="dropdown-menu text-small">
+							<li class="dropdown-item"><a class="link-text" href="/myaccount">My Account</a></li>
+							<li class="dropdown-item"><a class="link-text" href="/">Sign out</a></li>
+						</ul>
+					</div>
+				</div>
+		   	</div>
+		</div>
+	</header>
+	<div class="layout-wrapper">
+		<div class="main-content ms-0">
+			<div class="content__wrapper">
+				<div class="container-fluid">
+                    <div class="survey__card card flex-row">
+						<div class="survey__card__img">
+							<img src="./assets/images/survey-creater-graphics.svg" alt="Survey Creater Graphics">
+						</div>
+						<div class="survey__card__form">
+							<form action="#" method="post">
+                                <div class="survey__field__item">
+                                    <h4 class="mb-3">Create New Survey</h4>
+									<div class="row">
+										<div class="form-group col-lg-5">
+											<label>Contract Name *</label>
+											<input type="text" name="contract_name" class="form-control" placeholder="Free Text" required>
+										</div>
+										<div class="form-group col-lg-5">
+											<label>Vendor Name *</label>
+											<input type="text" name="vendor_name" class="form-control" placeholder="Anish Kumar">
+										</div>
+									</div>
+                                    <div class="survey__wizard mt-4">
+                                        <ul class="wizard__progress list-unstyled d-flex justify-content-between mb-0">
+                                            <li class="wizard__progress__step flex-fill completed">
+                                                <div class="progress__step__details">
+                                                    <h6 class="mb-3 fw-normal">Header fields</h6>
+                                                </div>
+                                                <div class="progress__step__number d-flex align-items-center justify-content-center rounded-circle"><a href="./survey-creator-1.html">1</a></div>
+                                            </li>
+                                            <li class="wizard__progress__step flex-fill completed">
+                                                <div class="progress__step__details">
+                                                    <h6 class="mb-3 fw-normal">Survey Target Users</h6>
+                                                </div>
+                                                <div class="progress__step__number d-flex align-items-center justify-content-center rounded-circle"><a href="./survey-creator-2.html">2</a></div>
+                                            </li>
+                                            <li class="wizard__progress__step flex-fill active">
+                                                <div class="progress__step__details">
+                                                    <h6 class="mb-3 fw-normal">Survey Schedule </h6>
+                                                </div>
+                                                <div class="progress__step__number d-flex align-items-center justify-content-center rounded-circle"><a href="./survey-creator-3.html">3</a></div>
+                                            </li>
+                                            <li class="wizard__progress__step flex-fill">
+                                                <div class="progress__step__details">
+                                                    <h6 class="mb-3 fw-normal">Create Questions</h6>
+                                                </div>
+                                                <div class="progress__step__number d-flex align-items-center justify-content-center rounded-circle"><a href="./survey-creator-4.html">4</a></div>
+                                            </li>
+                                        </ul>
+                                        <div class="wizard__contents mt-5">
+                                            <div class="row">
+                                                <div class="form-group col-lg-4">
+                                                    <label class="col-md-3 mb-0">Start Date</label>
+                                                    <input type="text" name="start_date" class="datepicker form-control" placeholder="Select date">
+                                                </div>
+                                                <div class="form-group col-lg-4">
+                                                    <label>Start Date</label>
+                                                    <input type="text" name="end_date" class="datepicker form-control" placeholder="Select date">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group col-lg-4">
+                                                    <label>Time</label>
+                                                    <input type="text" name="time" class="timepicker form-control" placeholder="11:35 AM">
+                                                </div>
+                                                <div class="form-group col-lg-4">
+                                                    <label>Frequency</label>
+                                                    <select name="frequency" class="form-select form-control">
+                                                        <option value="0">Weekly</option>
+                                                        <option value="1">Monthly</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group col-lg-8">
+                                                    <label>Reminders</label>
+                                                    <select name="reminders" class="form-select form-control">
+                                                        <option value="0">Before 15 Minutes</option>
+                                                        <option value="1">Before 30 Minutes</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="text-end pt-4">
+                                                <a href="./survey-creator-4.html" class="btn btn-primary btn-blue">Next</a>
+                                            </div>
+                                        </div>
+                                    </div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="container-fluid">
+					<p class="mb-0 text-center">All rights reserved © FTPL</p>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQueru UI JS -->
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- Timepicker JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+	<script>
+        // Date Picker
+        $(function() {
+            $(".datepicker").datepicker();
+        });
+        // Time Picker
+        $(document).ready(function(){
+            $('.timepicker').timepicker();
+        }); 
+    </script>
+</body>
+</html>
